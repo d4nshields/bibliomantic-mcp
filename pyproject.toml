@@ -1,0 +1,51 @@
+[project]
+name = "bibliomantic-mcp"
+dynamic = ["version"]
+description = "A local, offline MCP server that casts the I Ching with three coins and returns the canonical text. The host model does the interpreting."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Daniel Shields", email = "d4nshields@gmail.com" }]
+requires-python = ">=3.12"
+dependencies = [
+    # SDK semver line 2.x speaks protocol revision 2026-07-28. See docs/SDK-NOTES.md.
+    "mcp>=2.3,<3",
+]
+
+[project.scripts]
+bibliomantic-mcp = "bibliomantic_mcp.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+path = "src/bibliomantic_mcp/__init__.py"
+
+[dependency-groups]
+dev = [
+    "mcp[cli]>=2.3,<3",
+    "mypy>=2.4.1",
+    "pytest>=9.2.0",
+    "ruff>=0.17.3",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+# Every warning is a failure, including the SDK's MCPDeprecationWarning (a UserWarning,
+# not a DeprecationWarning). Using a deprecated MCP feature must break the build.
+filterwarnings = ["error"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "SIM", "RUF"]
+# The en dash in user-facing ranges ("1–64") is intentional.
+allowed-confusables = ["–"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+plugins = ["pydantic.mypy"]
