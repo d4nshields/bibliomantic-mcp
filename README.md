@@ -29,7 +29,7 @@ All tools are annotated read-only and closed-world, and return structured output
 
 | Tool | Arguments | Returns |
 |---|---|---|
-| `cast_hexagram` | `question` (optional, echoed verbatim) | A full `Cast`: six coin tosses, line values, primary hexagram, changing lines, transformed hexagram |
+| `cast_hexagram` | `question` (optional, up to 2,000 characters, echoed verbatim) | A full `Cast`: six coin tosses, line values, primary hexagram, changing lines, transformed hexagram |
 | `get_hexagram` | `number` (1–64) | One `Hexagram` with its judgment, image and six lines |
 | `get_trigram` | `name` (English, any case, or Chinese character) | One `Trigram` |
 | `describe_method` | none | How the three-coin method works, and the text's source and licence |

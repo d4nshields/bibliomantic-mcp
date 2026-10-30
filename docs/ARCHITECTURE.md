@@ -13,9 +13,9 @@ Two layers, one rule: **the domain layer does not know MCP exists.**
 └──────────────────────────────────────────┬───────────────────────────────────────────┘
                                            │ plain function calls
 ┌──────────────────────────── domain layer (no mcp imports) ───────────────────────────┐
-│ oracle.py     cast(), flip(), lookups, describe_method(): pure functions             │
+│ oracle.py     cast(), lookups, describe_method(): pure functions                     │
 │ book.py       load_book(): JSON → validated, immutable Book                          │
-│ models.py     Trigram, Hexagram, LineValue, CoinToss, Cast, MethodDescription, Book  │
+│ models.py     Trigram, Hexagram, LineValue, CoinToss, Cast, flip(), Book, …          │
 │ render.py     plain text / Markdown renderings of domain objects                     │
 │ data/         trigrams.json, hexagrams.json, SOURCES.md                              │
 └──────────────────────────────────────────────────────────────────────────────────────┘

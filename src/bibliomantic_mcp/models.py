@@ -112,6 +112,14 @@ HEADS = 3
 TAILS = 2
 
 
+def flip(binary: str, positions: tuple[int, ...]) -> str:
+    """Change the lines at the given 1-based positions into their opposites."""
+    bits = list(binary)
+    for position in positions:
+        bits[position - 1] = "0" if bits[position - 1] == "1" else "1"
+    return "".join(bits)
+
+
 class CoinToss(_Frozen):
     """Three coins thrown for one line."""
 
@@ -152,8 +160,13 @@ class Cast(_Frozen):
         changing = tuple(i for i, v in enumerate(self.values, start=1) if v.is_changing)
         if changing != self.changing_lines:
             raise ValueError("changing_lines do not match the line values")
-        if (self.transformed is None) != (not changing):
-            raise ValueError("transformed must be present exactly when lines change")
+        if self.transformed is None:
+            if changing:
+                raise ValueError("lines change, so a transformed hexagram is required")
+        elif not changing:
+            raise ValueError("no lines change, so there can be no transformed hexagram")
+        elif flip(self.primary.binary, changing) != self.transformed.binary:
+            raise ValueError("transformed hexagram is not the primary with its lines flipped")
         return self
 
 

@@ -35,10 +35,16 @@ Light modernisation only. Each judgment, image and line still says what Legge's 
 
 ## Names
 
-The English `name` of each hexagram is a short conventional rendering. Where the text names the
-hexagram (most of 17–64), the `name` matches the gloss used in the text, which is drawn from
-Legge's own renderings ("Overthrowing", "Long Continuance", "The Caldron"). Short titles are not
-subject to copyright.
+The English `name` of each hexagram is a short title in common modern use. Where the text names
+the hexagram (most of 17–64), the `name` matches the gloss used in the text. Many of those glosses
+come from Legge's own renderings ("Overthrowing", "Long Continuance", "The Caldron"). Others,
+especially among 1–16 ("The Creative", "The Receptive", "Youthful Ignorance", "Enthusiasm") and
+36 ("Darkening of the Light"), are the conventional titles popularised by the Wilhelm/Baynes
+translation. Only these short titles are shared. Short titles are not subject to copyright, and
+no Wilhelm/Baynes *text* is used anywhere.
+
+Personal and place names inside the texts keep Legge's spellings, written in plain ASCII
+("king Ti-yi", "the count of Ki", "Kao Tsung").
 
 ## Licence of this file set
 

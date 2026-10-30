@@ -23,6 +23,7 @@ from bibliomantic_mcp.models import (
     LineValueInfo,
     MethodDescription,
     Trigram,
+    flip,
 )
 
 NOTICE = "For reflection and creativity only: a cast makes no prediction and is not advice."
@@ -32,7 +33,8 @@ class NotInBook(LookupError):
     """A lookup asked for something the book does not contain (e.g. hexagram 65).
 
     The protocol layer maps this to whatever error its primitive uses: a
-    `ToolError` for a tool, a `ResourceNotFoundError` for a resource.
+    `ToolError` for a tool, a `ResourceNotFoundError` for a resource, and an
+    `MCPError(INVALID_PARAMS)` for a prompt argument.
     """
 
 
@@ -71,14 +73,6 @@ def cast(book: Book, question: str | None = None, rng: random.Random | None = No
     )
 
 
-def flip(binary: str, positions: tuple[int, ...]) -> str:
-    """Change the lines at the given 1-based positions into their opposites."""
-    bits = list(binary)
-    for position in positions:
-        bits[position - 1] = "0" if bits[position - 1] == "1" else "1"
-    return "".join(bits)
-
-
 def hexagram_from_number(book: Book, number: int) -> Hexagram:
     if not 1 <= number <= HEXAGRAM_COUNT:
         raise NotInBook(f"Hexagram number must be 1–{HEXAGRAM_COUNT}, not {number}")
@@ -110,7 +104,11 @@ def trigram_by_name(book: Book, name: str) -> Trigram:
 
 
 def nuclear_hexagram(book: Book, hexagram: Hexagram) -> Hexagram:
-    """The hidden figure inside a hexagram: lines 2-3-4 below, lines 3-4-5 above."""
+    """The hidden figure inside a hexagram: lines 2-3-4 below, lines 3-4-5 above.
+
+    A traditional extra for study. Not exposed as a tool; kept as a small worked
+    example of how much structure a six-bit string carries.
+    """
     b = hexagram.binary
     return hexagram_from_binary(book, b[1:4] + b[2:5])
 

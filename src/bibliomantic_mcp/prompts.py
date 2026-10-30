@@ -56,11 +56,11 @@ def register(server: MCPServer[AppState]) -> None:
         # Prompt arguments are strings typed by a person. A bad one rejects the request
         # (JSON-RPC invalid params): there is no model in the loop to read a softer error.
         try:
-            number = str(oracle.parse_hexagram_number(number))
+            n = oracle.parse_hexagram_number(number)
         except oracle.NotInBook as exc:
             raise MCPError(code=INVALID_PARAMS, message=str(exc)) from exc
         return (
-            f"Please read the resource `iching://hexagram/{number}` and teach me this "
+            f"Please read the resource `iching://hexagram/{n}` and teach me this "
             "hexagram: how its two trigrams build it (look them up with `get_trigram` if "
             "useful), then its judgment, its image, and what each of the six lines adds, "
             "from the bottom up. Keep the text's own words visible alongside your "

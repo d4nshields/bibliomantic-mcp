@@ -22,6 +22,9 @@ def cast_summary(cast: Cast) -> str:
         lines.append(f"Changing lines: {positions}")
         for n in cast.changing_lines:
             lines.append(f"  {p.lines[n - 1].text}")
+        # Hexagrams 1 and 2 have an extra text for when every line changes.
+        if len(cast.changing_lines) == 6 and p.commentary:
+            lines.append(f"  {p.commentary}")
         t = cast.transformed
         lines.append(f"Becomes {t.symbol} Hexagram {t.number}: {t.name} ({t.chinese}, {t.pinyin})")
     lines.append(cast.notice)

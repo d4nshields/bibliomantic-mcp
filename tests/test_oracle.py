@@ -9,7 +9,7 @@ from pydantic import ValidationError
 
 from bibliomantic_mcp import oracle
 from bibliomantic_mcp.book import load_book
-from bibliomantic_mcp.models import HEXAGRAM_COUNT, Cast, CoinToss, LineValue
+from bibliomantic_mcp.models import HEXAGRAM_COUNT, Cast, CoinToss, LineValue, flip
 
 BOOK = load_book()
 
@@ -120,10 +120,10 @@ def test_flipping_is_per_position(seed: int) -> None:
 
 
 def test_flip() -> None:
-    assert oracle.flip("111111", (1,)) == "011111"
-    assert oracle.flip("111111", (6,)) == "111110"
-    assert oracle.flip("101010", (1, 2, 3, 4, 5, 6)) == "010101"
-    assert oracle.flip("101010", ()) == "101010"
+    assert flip("111111", (1,)) == "011111"
+    assert flip("111111", (6,)) == "111110"
+    assert flip("101010", (1, 2, 3, 4, 5, 6)) == "010101"
+    assert flip("101010", ()) == "101010"
 
 
 def test_every_hexagram_is_reachable() -> None:
@@ -139,6 +139,21 @@ def test_cast_record_rejects_tampering() -> None:
     data = good.model_dump()
     data["primary"] = BOOK.hexagrams[1].model_dump()
     with pytest.raises(ValidationError, match="primary hexagram does not match"):
+        Cast.model_validate(data)
+
+
+def test_cast_record_rejects_a_wrong_transformed_hexagram() -> None:
+    good = oracle.cast(BOOK, rng=random.Random(41))  # 20 -> 3
+    data = good.model_dump()
+    data["transformed"] = BOOK.hexagrams[64].model_dump()
+    with pytest.raises(ValidationError, match="not the primary with its lines flipped"):
+        Cast.model_validate(data)
+
+
+def test_cast_record_rejects_a_missing_transformed_hexagram() -> None:
+    data = oracle.cast(BOOK, rng=random.Random(41)).model_dump()
+    data["transformed"] = None
+    with pytest.raises(ValidationError, match="transformed hexagram is required"):
         Cast.model_validate(data)
 
 
