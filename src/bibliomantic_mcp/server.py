@@ -7,7 +7,8 @@ by the arguments passed to `run()`.
 
 from mcp.server import MCPServer
 
-from bibliomantic_mcp import __version__
+from bibliomantic_mcp import __version__, tools
+from bibliomantic_mcp.lifespan import AppState, app_lifespan
 
 INSTRUCTIONS = """\
 This server is an I Ching: it casts a hexagram with the traditional three-coin method \
@@ -20,11 +21,14 @@ Treat every result as a prompt for reflection and creativity, not as a predictio
 """
 
 
-def create_server() -> MCPServer:
+def create_server() -> MCPServer[AppState]:
     """Construct the server. A factory, not a module global, so tests get a fresh one."""
-    return MCPServer(
+    server = MCPServer(
         "bibliomantic",
         title="Bibliomantic I Ching",
         instructions=INSTRUCTIONS,
         version=__version__,
+        lifespan=app_lifespan,
     )
+    tools.register(server)
+    return server
