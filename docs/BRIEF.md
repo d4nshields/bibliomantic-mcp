@@ -6,11 +6,6 @@ for it (do not clone, search, or fetch anything from `d4nshields/bibliomantic-mc
 or any package of that name). Everything you need is here. Where this brief is silent,
 choose the most idiomatic, current MCP pattern and record the choice in an ADR.
 
-The result will be shown at a conference talk (DevFest 2026 Toronto) as a worked example
-of MCP server internals. Every design decision should therefore be *legible*: a reader
-should be able to open any file and understand why it exists. Prefer clarity over
-cleverness, and small, well-named modules over one big file.
-
 ---
 
 ## 0. Before writing any code

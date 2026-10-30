@@ -1,6 +1,6 @@
 # Talk notes: MCP server internals, by way of the I Ching
 
-DevFest 2026 Toronto. A 25–30 minute walkthrough in nine stops. Each stop names the file and
+A 25–30 minute walkthrough in nine stops. Each stop names the file and
 symbol to open, what to say, and the exact command or Inspector clicks to show it. Symbols are
 given instead of line numbers so these notes survive edits: in any editor, jump to the symbol.
 
