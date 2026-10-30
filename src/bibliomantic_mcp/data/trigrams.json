@@ -1,0 +1,85 @@
+{
+  "source": "James Legge, The Yi King (Sacred Books of the East, vol. XVI, 1882), Appendix V (Shuo Gua), chapters 7 to 11.",
+  "trigrams": [
+    {
+      "name": "Heaven",
+      "chinese": "乾",
+      "pinyin": "qián",
+      "symbol": "☰",
+      "binary": "111",
+      "attribute": "strength",
+      "image": "heaven",
+      "family": "father"
+    },
+    {
+      "name": "Lake",
+      "chinese": "兌",
+      "pinyin": "duì",
+      "symbol": "☱",
+      "binary": "110",
+      "attribute": "pleasure",
+      "image": "a lake or marsh",
+      "family": "youngest daughter"
+    },
+    {
+      "name": "Fire",
+      "chinese": "離",
+      "pinyin": "lí",
+      "symbol": "☲",
+      "binary": "101",
+      "attribute": "brightness",
+      "image": "fire and the sun",
+      "family": "middle daughter"
+    },
+    {
+      "name": "Thunder",
+      "chinese": "震",
+      "pinyin": "zhèn",
+      "symbol": "☳",
+      "binary": "100",
+      "attribute": "movement",
+      "image": "thunder",
+      "family": "eldest son"
+    },
+    {
+      "name": "Wind",
+      "chinese": "巽",
+      "pinyin": "xùn",
+      "symbol": "☴",
+      "binary": "011",
+      "attribute": "penetration",
+      "image": "wind and wood",
+      "family": "eldest daughter"
+    },
+    {
+      "name": "Water",
+      "chinese": "坎",
+      "pinyin": "kǎn",
+      "symbol": "☵",
+      "binary": "010",
+      "attribute": "peril",
+      "image": "water and the moon",
+      "family": "middle son"
+    },
+    {
+      "name": "Mountain",
+      "chinese": "艮",
+      "pinyin": "gèn",
+      "symbol": "☶",
+      "binary": "001",
+      "attribute": "stopping",
+      "image": "a mountain",
+      "family": "youngest son"
+    },
+    {
+      "name": "Earth",
+      "chinese": "坤",
+      "pinyin": "kūn",
+      "symbol": "☷",
+      "binary": "000",
+      "attribute": "docility",
+      "image": "the earth",
+      "family": "mother"
+    }
+  ]
+}

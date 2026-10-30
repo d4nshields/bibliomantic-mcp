@@ -1,0 +1,2440 @@
+{
+  "source": "James Legge, The Yi King, Sacred Books of the East vol. XVI (Oxford, 1882): the Text for judgments and lines, and Appendix II (the Great Symbolism) for images. Public domain; lightly modernised.",
+  "licence": "Public domain. Legge's 1882 translation is out of copyright worldwide; the light modernisation in this file is released under the project's MIT licence.",
+  "hexagrams": [
+    {
+      "number": 1,
+      "name": "The Creative",
+      "chinese": "乾",
+      "pinyin": "qián",
+      "symbol": "䷀",
+      "binary": "111111",
+      "upper": "Heaven",
+      "lower": "Heaven",
+      "judgment": "This hexagram represents what is great and originating, penetrating, advantageous, correct and firm.",
+      "image": "Heaven, in its motion, gives the idea of strength. The superior man, in accordance with this, nerves himself to ceaseless activity.",
+      "lines": [
+        {
+          "position": 1,
+          "text": "Nine at the beginning: The dragon lies hidden in the deep. It is not the time for active doing."
+        },
+        {
+          "position": 2,
+          "text": "Nine in the second place: The dragon appears in the field. It will be advantageous to meet with the great man."
+        },
+        {
+          "position": 3,
+          "text": "Nine in the third place: The superior man is active and vigilant all the day, and in the evening still careful and apprehensive. The position is dangerous, but there will be no mistake."
+        },
+        {
+          "position": 4,
+          "text": "Nine in the fourth place: The dragon looks as if he were leaping up, but is still in the deep. There will be no mistake."
+        },
+        {
+          "position": 5,
+          "text": "Nine in the fifth place: The dragon is on the wing in the sky. It will be advantageous to meet with the great man."
+        },
+        {
+          "position": 6,
+          "text": "Nine at the top: The dragon exceeds the proper limits. There will be occasion for repentance."
+        }
+      ],
+      "commentary": "When all six lines are nines: If the host of dragons thus appearing were to divest themselves of their heads, there would be good fortune."
+    },
+    {
+      "number": 2,
+      "name": "The Receptive",
+      "chinese": "坤",
+      "pinyin": "kūn",
+      "symbol": "䷁",
+      "binary": "000000",
+      "upper": "Earth",
+      "lower": "Earth",
+      "judgment": "This hexagram represents what is great and originating, penetrating, advantageous, correct and having the firmness of a mare. When the superior man has to make any movement, if he takes the initiative, he will go astray; if he follows, he will find his proper lord. The advantageousness will be seen in his getting friends in the south-west, and losing friends in the north-east. If he rests in correctness and firmness, there will be good fortune.",
+      "image": "The capacity and sustaining power of the earth is what is denoted by this hexagram. The superior man, in accordance with this, with his large virtue supports men and things.",
+      "lines": [
+        {
+          "position": 1,
+          "text": "Six at the beginning: He is treading on hoarfrost. The strong ice will come by and by."
+        },
+        {
+          "position": 2,
+          "text": "Six in the second place: It shows the attribute of being straight, square, and great. Without repeated efforts, its operation will be in every respect advantageous."
+        },
+        {
+          "position": 3,
+          "text": "Six in the third place: He keeps his excellence under restraint, but firmly maintains it. If he should have occasion to engage in the king's service, though he will not claim the success for himself, he will bring affairs to a good issue."
+        },
+        {
+          "position": 4,
+          "text": "Six in the fourth place: A sack tied up. There will be no ground for blame or for praise."
+        },
+        {
+          "position": 5,
+          "text": "Six in the fifth place: The yellow lower garment. There will be great good fortune."
+        },
+        {
+          "position": 6,
+          "text": "Six at the top: Dragons fight in the wild. Their blood is purple and yellow."
+        }
+      ],
+      "commentary": "When all six lines are sixes: If those thus represented are perpetually correct and firm, advantage will arise."
+    },
+    {
+      "number": 3,
+      "name": "Difficulty at the Beginning",
+      "chinese": "屯",
+      "pinyin": "zhūn",
+      "symbol": "䷂",
+      "binary": "100010",
+      "upper": "Water",
+      "lower": "Thunder",
+      "judgment": "There will be great progress and success, and the advantage will come from being correct and firm. But any movement in advance should not be lightly undertaken. There will be advantage in appointing feudal princes.",
+      "image": "Clouds and thunder form this hexagram. The superior man, in accordance with this, adjusts his measures of government as in sorting the threads of the warp and woof.",
+      "lines": [
+        {
+          "position": 1,
+          "text": "Nine at the beginning: There is difficulty in advancing. It will be advantageous to abide correct and firm; advantageous also to be made a feudal ruler."
+        },
+        {
+          "position": 2,
+          "text": "Six in the second place: She is distressed and obliged to return; even the horses of her chariot seem to be retreating. But she is assailed not by a spoiler, but by one who seeks her to be his wife. The young lady maintains her firm correctness, and declines a union. After ten years she will be united, and have children."
+        },
+        {
+          "position": 3,
+          "text": "Six in the third place: One follows the deer without the guidance of the forester, and only finds himself in the midst of the forest. The superior man, acquainted with the secret risks, thinks it better to give up the chase. If he went forward, he would regret it."
+        },
+        {
+          "position": 4,
+          "text": "Six in the fourth place: The horses of her chariot appear in retreat. She seeks, however, the help of him who seeks her to be his wife. Advance will be fortunate; all will turn out advantageously."
+        },
+        {
+          "position": 5,
+          "text": "Nine in the fifth place: There are difficulties in the way of dispensing the rich favours that might be expected from him. With firmness and correctness there will be good fortune in small things; even with them, in great things there will be evil."
+        },
+        {
+          "position": 6,
+          "text": "Six at the top: The horses of his chariot are obliged to retreat, and he weeps tears of blood in streams."
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "name": "Youthful Ignorance",
+      "chinese": "蒙",
+      "pinyin": "méng",
+      "symbol": "䷃",
+      "binary": "010001",
+      "upper": "Mountain",
+      "lower": "Water",
+      "judgment": "There will be progress and success. I do not go and seek the youthful and inexperienced, but he comes and seeks me. When he shows the sincerity that marks the first recourse to divination, I instruct him. If he applies a second and third time, that is troublesome; and I do not instruct the troublesome. There will be advantage in being firm and correct.",
+      "image": "A mountain, and beneath it a spring issuing forth, form this hexagram. The superior man, in accordance with this, strives to be resolute in his conduct and nourishes his virtue.",
+      "lines": [
+        {
+          "position": 1,
+          "text": "Six at the beginning: For the dispelling of ignorance, it will be advantageous to use punishment, and to remove the shackles from the mind. But going on in that way will give occasion for regret."
+        },
+        {
+          "position": 2,
+          "text": "Nine in the second place: He exercises forbearance with the ignorant, in which there will be good fortune; and admits even the goodness of women, which will also be fortunate. He is a son able to sustain the burden of his family."
+        },
+        {
+          "position": 3,
+          "text": "Six in the third place: One should not marry a woman such as this, for when she sees a man of wealth, she will not keep her person from him, and in no wise will advantage come from her."
+        },
+        {
+          "position": 4,
+          "text": "Six in the fourth place: He is bound in chains of ignorance. There will be occasion for regret."
+        },
+        {
+          "position": 5,
+          "text": "Six in the fifth place: A simple lad without experience. There will be good fortune."
+        },
+        {
+          "position": 6,
+          "text": "Nine at the top: One smites the ignorant youth. But no advantage will come from doing him an injury. Advantage would come from warding off injury from him."
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "name": "Waiting",
+      "chinese": "需",
+      "pinyin": "xū",
+      "symbol": "䷄",
+      "binary": "111010",
+      "upper": "Water",
+      "lower": "Heaven",
+      "judgment": "With the sincerity which is declared in it, there will be brilliant success. With firmness there will be good fortune; and it will be advantageous to cross the great stream.",
+      "image": "Clouds ascending over the sky form this hexagram. The superior man, in accordance with this, eats and drinks, feasts and enjoys himself, as if there were nothing else to employ him.",
+      "lines": [
+        {
+          "position": 1,
+          "text": "Nine at the beginning: He waits in the distant border. It will be well for him constantly to maintain the purpose thus shown, in which case there will be no error."
+        },
+        {
+          "position": 2,
+          "text": "Nine in the second place: He waits on the sand of the mountain stream. He will suffer the small injury of being spoken against, but in the end there will be good fortune."
+        },
+        {
+          "position": 3,
+          "text": "Nine in the third place: He is in the mud close by the stream. He thereby invites the approach of injury."
+        },
+        {
+          "position": 4,
+          "text": "Six in the fourth place: He waits in the place of blood. But he will get out of the cavern."
+        },
+        {
+          "position": 5,
+          "text": "Nine in the fifth place: He waits amidst the appliances of a feast. Through his firmness and correctness there will be good fortune."
+        },
+        {
+          "position": 6,
+          "text": "Six at the top: He has entered into the cavern. But there are three guests coming, without being urged, to his help. If he receives them respectfully, there will be good fortune in the end."
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "name": "Conflict",
+      "chinese": "訟",
+      "pinyin": "sòng",
+      "symbol": "䷅",
+      "binary": "010111",
+      "upper": "Heaven",
+      "lower": "Water",
+      "judgment": "Though there is sincerity in one's contention, he will yet meet with opposition and obstruction; but if he cherishes an apprehensive caution, there will be good fortune, while, if he must prosecute the contention to the bitter end, there will be evil. It will be advantageous to see the great man; it will not be advantageous to cross the great stream.",
+      "image": "Heaven and water, moving away from each other, form this hexagram. The superior man, in accordance with this, in the transaction of affairs takes good counsel about his first steps.",
+      "lines": [
+        {
+          "position": 1,
+          "text": "Six at the beginning: He does not perpetuate the matter about which the contention is. He will suffer the small injury of being spoken against, but the end will be fortunate."
+        },
+        {
+          "position": 2,
+          "text": "Nine in the second place: He is unequal to the contention. If he retires and keeps concealed where the inhabitants of his city are only three hundred families, he will fall into no mistake."
+        },
+        {
+          "position": 3,
+          "text": "Six in the third place: He keeps in the old place assigned for his support, and is firmly correct. Perilous as the position is, there will be good fortune in the end. Should he perchance engage in the king's business, he will not claim the merit of achievement."
+        },
+        {
+          "position": 4,
+          "text": "Nine in the fourth place: He is unequal to the contention. He returns to the study of Heaven's ordinances, changes his wish to contend, and rests in being firm and correct. There will be good fortune."
+        },
+        {
+          "position": 5,
+          "text": "Nine in the fifth place: He contends, and with great good fortune."
+        },
+        {
+          "position": 6,
+          "text": "Nine at the top: He may have the leathern belt conferred on him by the sovereign, and thrice it shall be taken from him in a morning."
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "name": "The Army",
+      "chinese": "師",
+      "pinyin": "shī",
+      "symbol": "䷆",
+      "binary": "010000",
+      "upper": "Earth",
+      "lower": "Water",
+      "judgment": "With firmness and correctness, and a leader of age and experience, there will be good fortune and no error.",
+      "image": "The earth, and in the midst of it water, form this hexagram. The superior man, in accordance with this, nourishes and educates the people, and collects from among them the multitudes of the hosts.",
+      "lines": [
+        {
+          "position": 1,
+          "text": "Six at the beginning: The host goes forth according to the rules for such a movement. If these are not good, there will be evil."
+        },
+        {
+          "position": 2,
+          "text": "Nine in the second place: The leader is in the midst of the host. There will be good fortune and no error. The king has thrice conveyed to him the orders of his favour."
+        },
+        {
+          "position": 3,
+          "text": "Six in the third place: The host may, possibly, have many inefficient leaders. There will be evil."
+        },
+        {
+          "position": 4,
+          "text": "Six in the fourth place: The host is in retreat. There is no error."
+        },
+        {
+          "position": 5,
+          "text": "Six in the fifth place: There are birds in the fields, which it will be advantageous to seize and destroy. In that case there will be no error. If the oldest son leads the host, and younger men idly occupy offices assigned to them, however firm and correct he may be, there will be evil."
+        },
+        {
+          "position": 6,
+          "text": "Six at the top: The great ruler delivers his charges, appointing some to be rulers of states, and others to undertake the headship of clans; but small men should not be employed in such positions."
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "name": "Union",
+      "chinese": "比",
+      "pinyin": "bǐ",
+      "symbol": "䷇",
+      "binary": "000010",
+      "upper": "Water",
+      "lower": "Earth",
+      "judgment": "There is good fortune. But let the principal party re-examine himself, as if by divination, whether his virtue is great, unintermitting, and firm. If it is so, there will be no error. Those who have not rest will then come to him; and with those who are too late in coming it will be ill.",
+      "image": "The earth, and over it water, form this hexagram. The ancient kings, in accordance with this, established the various states and maintained an affectionate relation to their princes.",
+      "lines": [
+        {
+          "position": 1,
+          "text": "Six at the beginning: He seeks by his sincerity to win the attachment of his object. There will be no error. Let the breast be full of sincerity as an earthenware vessel is of its contents, and it will in the end bring other advantages."
+        },
+        {
+          "position": 2,
+          "text": "Six in the second place: The movement towards union and attachment proceeds from the inward mind. With firm correctness there will be good fortune."
+        },
+        {
+          "position": 3,
+          "text": "Six in the third place: He seeks for union with such as ought not to be associated with."
+        },
+        {
+          "position": 4,
+          "text": "Six in the fourth place: He seeks for union with the one beyond himself. With firm correctness there will be good fortune."
+        },
+        {
+          "position": 5,
+          "text": "Nine in the fifth place: The most illustrious instance of seeking union and attachment. The king urges his pursuit of the game only in three directions, and allows the escape of all the animals before him, while the people of his towns do not warn one another to prevent it. There will be good fortune."
+        },
+        {
+          "position": 6,
+          "text": "Six at the top: He seeks union and attachment without having taken the first step to such an end. There will be evil."
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "name": "Small Restraint",
+      "chinese": "小畜",
+      "pinyin": "xiǎo chù",
+      "symbol": "䷈",
+      "binary": "111011",
+      "upper": "Wind",
+      "lower": "Heaven",
+      "judgment": "There will be progress and success. We see dense clouds, but no rain coming from our borders in the west.",
+      "image": "The sky, and wind moving above it, form this hexagram. The superior man, in accordance with this, adorns the outward manifestation of his virtue.",
+      "lines": [
+        {
+          "position": 1,
+          "text": "Nine at the beginning: He returns and pursues his own course. What mistake should he fall into? There will be good fortune."
+        },
+        {
+          "position": 2,
+          "text": "Nine in the second place: By the attraction of the former line, he returns to the proper course. There will be good fortune."
+        },
+        {
+          "position": 3,
+          "text": "Nine in the third place: A carriage, the strap beneath which has been removed; or a husband and wife looking on each other with averted eyes."
+        },
+        {
+          "position": 4,
+          "text": "Six in the fourth place: He is possessed of sincerity. The danger of bloodshed is thereby averted, and his ground for apprehension dismissed. There will be no mistake."
+        },
+        {
+          "position": 5,
+          "text": "Nine in the fifth place: He is possessed of sincerity, and draws others to unite with him. Rich in resources, he employs his neighbours in the same cause with himself."
+        },
+        {
+          "position": 6,
+          "text": "Nine at the top: The rain has fallen, and the onward progress is stayed; so must we value the full accumulation of virtue. But a wife exercising restraint, however firm and correct she may be, is in a position of peril, and like the moon approaching to the full. If the superior man prosecutes his measures in such circumstances, there will be evil."
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "name": "Treading",
+      "chinese": "履",
+      "pinyin": "lǚ",
+      "symbol": "䷉",
+      "binary": "110111",
+      "upper": "Heaven",
+      "lower": "Lake",
+      "judgment": "One treads on the tail of a tiger, which does not bite him. There will be progress and success.",
+      "image": "The sky above, and below it the waters of a marsh, form this hexagram. The superior man, in accordance with this, discriminates between high and low, and gives settlement to the aims of the people.",
+      "lines": [
+        {
+          "position": 1,
+          "text": "Nine at the beginning: He treads his accustomed path. If he goes forward, there will be no error."
+        },
+        {
+          "position": 2,
+          "text": "Nine in the second place: He treads the path that is level and easy; a quiet and solitary man, to whom, if he is firm and correct, there will be good fortune."
+        },
+        {
+          "position": 3,
+          "text": "Six in the third place: A one-eyed man who thinks he can see; a lame man who thinks he can walk well; one who treads on the tail of a tiger and is bitten. All this indicates ill fortune. We have a mere bravo acting the part of a great ruler."
+        },
+        {
+          "position": 4,
+          "text": "Nine in the fourth place: He treads on the tail of a tiger. He becomes full of apprehensive caution, and in the end there will be good fortune."
+        },
+        {
+          "position": 5,
+          "text": "Nine in the fifth place: He treads resolutely. Though he is firm and correct, there will be peril."
+        },
+        {
+          "position": 6,
+          "text": "Nine at the top: Look at the whole course that is trodden, and examine the presage which that gives. If it is complete and without failure, there will be great good fortune."
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "name": "Peace",
+      "chinese": "泰",
+      "pinyin": "tài",
+      "symbol": "䷊",
+      "binary": "111000",
+      "upper": "Earth",
+      "lower": "Heaven",
+      "judgment": "The little gone and the great come. There will be good fortune, with progress and success.",
+      "image": "Heaven and earth in communication together form this hexagram. The sage sovereign, in harmony with this, fashions and completes his regulations after the courses of heaven and earth, and assists the application of the adaptations furnished by them, in order to benefit the people.",
+      "lines": [
+        {
+          "position": 1,
+          "text": "Nine at the beginning: Grass pulled up, bringing with it other stalks with whose roots it is connected. Advance will be fortunate."
+        },
+        {
+          "position": 2,
+          "text": "Nine in the second place: One who can bear with the uncultivated, will cross the Ho without a boat, does not forget the distant, and has no selfish friendships. Thus does he prove himself acting in accordance with the course of the due Mean."
+        },
+        {
+          "position": 3,
+          "text": "Nine in the third place: While there is no state of peace that is not liable to be disturbed, and no departure of evil men so that they shall not return, yet when one is firm and correct, as he realises the distresses that may arise, he will commit no error. There is no occasion for sadness at the certainty of such recurring changes; and in this mood the happiness of the present may be long enjoyed."
+        },
+        {
+          "position": 4,
+          "text": "Six in the fourth place: He comes fluttering down, not relying on his own rich resources, but calling in his neighbours. They all come not as having received warning, but in the sincerity of their hearts."
+        },
+        {
+          "position": 5,
+          "text": "Six in the fifth place: King Tî-yî's rule about the marriage of his younger sister. By such a course there is happiness, and there will be great good fortune."
+        },
+        {
+          "position": 6,
+          "text": "Six at the top: The city wall returned into the moat. It is not the time to use the army. He may, indeed, announce his orders to the people of his own city; but however correct and firm he may be, he will have cause for regret."
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "name": "Stagnation",
+      "chinese": "否",
+      "pinyin": "pǐ",
+      "symbol": "䷋",
+      "binary": "000111",
+      "upper": "Heaven",
+      "lower": "Earth",
+      "judgment": "There is the want of good understanding between the different classes of men, and its indication is unfavourable to the firm and correct course of the superior man. We see in it the great gone and the little come.",
+      "image": "Heaven and earth, not in intercommunication, form this hexagram. The superior man, in accordance with this, restrains the manifestation of his virtue, and avoids the calamities that threaten him. There is no opportunity of conferring on him the glory of emolument.",
+      "lines": [
+        {
+          "position": 1,
+          "text": "Six at the beginning: Grass pulled up, bringing with it other stalks with whose roots it is connected. With firm correctness there will be good fortune and progress."
+        },
+        {
+          "position": 2,
+          "text": "Six in the second place: He is patient and obedient. To the small man comporting himself so there will be good fortune. If the great man comports himself as the distress and obstruction require, he will have success."
+        },
+        {
+          "position": 3,
+          "text": "Six in the third place: He is ashamed of the purpose folded in his breast."
+        },
+        {
+          "position": 4,
+          "text": "Nine in the fourth place: He acts in accordance with the ordination of Heaven, and commits no error. His companions will come and share in his happiness."
+        },
+        {
+          "position": 5,
+          "text": "Nine in the fifth place: He brings the distress and obstruction to a close: the great man and fortunate. But let him say, 'We may perish! We may perish!' So shall the state of things become firm, as if bound to a clump of bushy mulberry trees."
+        },
+        {
+          "position": 6,
+          "text": "Nine at the top: The overthrow and removal of the condition of distress and obstruction. Before this there was that condition. Hereafter there will be joy."
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "name": "Fellowship",
+      "chinese": "同人",
+      "pinyin": "tóng rén",
+      "symbol": "䷌",
+      "binary": "101111",
+      "upper": "Heaven",
+      "lower": "Fire",
+      "judgment": "Union of men appears here in the remote districts of the country, indicating progress and success. It will be advantageous to cross the great stream. It will be advantageous to maintain the firm correctness of the superior man.",
+      "image": "Heaven and fire form this hexagram. The superior man, in accordance with this, distinguishes things according to their kinds and classes.",
+      "lines": [
+        {
+          "position": 1,
+          "text": "Nine at the beginning: The representative of the union of men is just issuing from his gate. There will be no error."
+        },
+        {
+          "position": 2,
+          "text": "Six in the second place: The representative of the union of men is in relation with his kindred. There will be occasion for regret."
+        },
+        {
+          "position": 3,
+          "text": "Nine in the third place: His arms are hidden in the thick grass, and he is at the top of a high mound. But for three years he makes no demonstration."
+        },
+        {
+          "position": 4,
+          "text": "Nine in the fourth place: He is mounted on the city wall; but he does not proceed to make the attack he contemplates. There will be good fortune."
+        },
+        {
+          "position": 5,
+          "text": "Nine in the fifth place: The representative of the union of men first wails and cries out, and then laughs. His great host conquers, and he and his correlate meet together."
+        },
+        {
+          "position": 6,
+          "text": "Nine at the top: The representative of the union of men is in the suburbs. There will be no occasion for repentance."
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "name": "Great Possession",
+      "chinese": "大有",
+      "pinyin": "dà yǒu",
+      "symbol": "䷍",
+      "binary": "111101",
+      "upper": "Fire",
+      "lower": "Heaven",
+      "judgment": "There will be great progress and success.",
+      "image": "Heaven, and fire above it, form this hexagram. The superior man, in accordance with this, represses what is evil and gives distinction to what is good, in sympathy with the excellent Heaven-conferred nature.",
+      "lines": [
+        {
+          "position": 1,
+          "text": "Nine at the beginning: There is no approach to what is injurious, and there is no error. Let there be a realisation of the difficulty and danger of the position, and there will be no error to the end."
+        },
+        {
+          "position": 2,
+          "text": "Nine in the second place: A large waggon with its load. In whatever direction advance is made, there will be no error."
+        },
+        {
+          "position": 3,
+          "text": "Nine in the third place: A feudal prince presents his offerings to the Son of Heaven. A small man would be unequal to such a duty."
+        },
+        {
+          "position": 4,
+          "text": "Nine in the fourth place: He keeps his great resources under restraint. There will be no error."
+        },
+        {
+          "position": 5,
+          "text": "Six in the fifth place: His sincerity is reciprocated by that of all the others. Let him display a proper majesty, and there will be good fortune."
+        },
+        {
+          "position": 6,
+          "text": "Nine at the top: Help is accorded to him from Heaven. There will be good fortune, advantage in every respect."
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "name": "Humility",
+      "chinese": "謙",
+      "pinyin": "qiān",
+      "symbol": "䷎",
+      "binary": "001000",
+      "upper": "Earth",
+      "lower": "Mountain",
+      "judgment": "There will be progress and success. The superior man, being humble, will have a good issue to his undertakings.",
+      "image": "The earth, and a mountain in the midst of it, form this hexagram. The superior man, in accordance with this, diminishes what is excessive in himself, and increases where there is any defect, bringing about an equality, according to the nature of the case, in his treatment of himself and others.",
+      "lines": [
+        {
+          "position": 1,
+          "text": "Six at the beginning: The superior man who adds humility to humility. Even the great stream may be crossed with this, and there will be good fortune."
+        },
+        {
+          "position": 2,
+          "text": "Six in the second place: Humility that has made itself recognised. With firm correctness there will be good fortune."
+        },
+        {
+          "position": 3,
+          "text": "Nine in the third place: The superior man of acknowledged merit. He will maintain his success to the end, and have good fortune."
+        },
+        {
+          "position": 4,
+          "text": "Six in the fourth place: One whose action would be in every way advantageous, stirring up the more his humility."
+        },
+        {
+          "position": 5,
+          "text": "Six in the fifth place: One who, without being rich, is able to employ his neighbours. He may advantageously use the force of arms. All his movements will be advantageous."
+        },
+        {
+          "position": 6,
+          "text": "Six at the top: Humility that has made itself recognised. The subject of it will with advantage put his hosts in motion; but he will only punish his own towns and state."
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "name": "Enthusiasm",
+      "chinese": "豫",
+      "pinyin": "yù",
+      "symbol": "䷏",
+      "binary": "000100",
+      "upper": "Thunder",
+      "lower": "Earth",
+      "judgment": "Feudal princes may be set up, and the hosts put in motion, with advantage.",
+      "image": "The earth, and thunder issuing from it with its crashing noise, form this hexagram. The ancient kings, in accordance with this, composed their music and did honour to virtue, presenting it especially and most grandly to God, when they associated with Him at the service their highest ancestor and their father.",
+      "lines": [
+        {
+          "position": 1,
+          "text": "Six at the beginning: He proclaims his pleasure and satisfaction. There will be evil."
+        },
+        {
+          "position": 2,
+          "text": "Six in the second place: One who is firm as a rock. He sees a thing without waiting till it has come to pass; with his firm correctness there will be good fortune."
+        },
+        {
+          "position": 3,
+          "text": "Six in the third place: One looks up for favours, while he indulges the feeling of pleasure and satisfaction. If he would understand! If he is late in doing so, there will indeed be occasion for repentance."
+        },
+        {
+          "position": 4,
+          "text": "Nine in the fourth place: From him the harmony and satisfaction come. Great is the success which he obtains. Let him not allow suspicions to enter his mind, and thus friends will gather around him."
+        },
+        {
+          "position": 5,
+          "text": "Six in the fifth place: One with a chronic complaint, but who lives on without dying."
+        },
+        {
+          "position": 6,
+          "text": "Six at the top: With darkened mind he is devoted to the pleasure and satisfaction of the time; but if he changes his course even when it may be considered as completed, there will be no error."
+        }
+      ]
+    },
+    {
+      "number": 17,
+      "name": "Following",
+      "chinese": "隨",
+      "pinyin": "suí",
+      "symbol": "䷐",
+      "binary": "100110",
+      "upper": "Lake",
+      "lower": "Thunder",
+      "judgment": "Following indicates that there will be great progress and success. But it will be advantageous to be firm and correct. There will then be no error.",
+      "image": "A marsh and thunder in the midst of it form Following. The superior man, in accordance with this, when it is getting towards dark, enters his house and rests.",
+      "lines": [
+        {
+          "position": 1,
+          "text": "Nine at the beginning: One changing the object of his pursuit; but if he be firm and correct, there will be good fortune. Going beyond his own gate to find associates, he will achieve merit."
+        },
+        {
+          "position": 2,
+          "text": "Six in the second place: One who cleaves to the little boy, and lets go the man of age and experience."
+        },
+        {
+          "position": 3,
+          "text": "Six in the third place: One who cleaves to the man of age and experience, and lets go the little boy. Such following will get what it seeks; but it will be advantageous to adhere to what is firm and correct."
+        },
+        {
+          "position": 4,
+          "text": "Nine in the fourth place: One followed and obtaining adherents. Though he be firm and correct, there will be evil. If he be sincere, however, in his course, and make that evident, into what error will he fall?"
+        },
+        {
+          "position": 5,
+          "text": "Nine in the fifth place: The ruler sincere in fostering all that is excellent. There will be good fortune."
+        },
+        {
+          "position": 6,
+          "text": "Six at the top: Sincerity firmly held and clung to, yea, and bound fast. We see the king with it presenting his offerings on the western mountain."
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "name": "Repairing Decay",
+      "chinese": "蠱",
+      "pinyin": "gǔ",
+      "symbol": "䷑",
+      "binary": "011001",
+      "upper": "Mountain",
+      "lower": "Wind",
+      "judgment": "Dealing with decay indicates great progress and success to him who deals properly with the condition represented by it. There will be advantage in crossing the great stream. He should weigh well the events of three days before the turning point, and those to be done three days after it.",
+      "image": "A mountain, and below it wind, form the hexagram of decay. The superior man, in accordance with this, addresses himself to help the people and nourish his own virtue.",
+      "lines": [
+        {
+          "position": 1,
+          "text": "Six at the beginning: A son dealing with the troubles caused by his father. If he be an able son, the father will escape the blame of having erred. The position is perilous, but there will be good fortune in the end."
+        },
+        {
+          "position": 2,
+          "text": "Nine in the second place: A son dealing with the troubles caused by his mother. He should not carry his firm correctness to the utmost."
+        },
+        {
+          "position": 3,
+          "text": "Nine in the third place: A son dealing with the troubles caused by his father. There may be some small occasion for repentance, but there will not be any great error."
+        },
+        {
+          "position": 4,
+          "text": "Six in the fourth place: A son viewing indulgently the troubles caused by his father. If he go forward, he will find cause to regret it."
+        },
+        {
+          "position": 5,
+          "text": "Six in the fifth place: A son dealing with the troubles caused by his father. He obtains the praise of using the fit instrument for his work."
+        },
+        {
+          "position": 6,
+          "text": "Nine at the top: One who does not serve either king or feudal lord, but in a lofty spirit prefers to attend to his own affairs."
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "name": "Approach",
+      "chinese": "臨",
+      "pinyin": "lín",
+      "symbol": "䷒",
+      "binary": "110000",
+      "upper": "Earth",
+      "lower": "Lake",
+      "judgment": "Approach indicates that there will be great progress and success, while it will be advantageous to be firmly correct. In the eighth month there will be evil.",
+      "image": "The waters of a marsh and the earth above it form Approach. The superior man, in accordance with this, has his purposes of instruction that are inexhaustible, and nourishes and supports the people without limit.",
+      "lines": [
+        {
+          "position": 1,
+          "text": "Nine at the beginning: Its subject advancing in company. Through his firm correctness there will be good fortune."
+        },
+        {
+          "position": 2,
+          "text": "Nine in the second place: Its subject advancing in company. There will be good fortune; advancing will be in every way advantageous."
+        },
+        {
+          "position": 3,
+          "text": "Six in the third place: One well pleased indeed to advance, but whose action will be in no way advantageous. If he become anxious about it, however, there will be no error."
+        },
+        {
+          "position": 4,
+          "text": "Six in the fourth place: One advancing in the highest mode. There will be no error."
+        },
+        {
+          "position": 5,
+          "text": "Six in the fifth place: The advance of wisdom, such as befits the great ruler. There will be good fortune."
+        },
+        {
+          "position": 6,
+          "text": "Six at the top: The advance of honesty and generosity. There will be good fortune, and no error."
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "name": "Contemplation",
+      "chinese": "觀",
+      "pinyin": "guān",
+      "symbol": "䷓",
+      "binary": "000011",
+      "upper": "Wind",
+      "lower": "Earth",
+      "judgment": "Contemplation shows how he whom it represents should be like the worshipper who has washed his hands, but not yet presented his offerings; with sincerity and an appearance of dignity commanding reverent regard.",
+      "image": "The earth, and wind moving above it, form Contemplation. The ancient kings, in accordance with this, examined the different regions of the kingdom, to see the ways of the people, and set forth their instructions.",
+      "lines": [
+        {
+          "position": 1,
+          "text": "Six at the beginning: The looking of a lad; not blamable in men of inferior rank, but matter for regret in superior men."
+        },
+        {
+          "position": 2,
+          "text": "Six in the second place: One peeping out from a door. It would be advantageous if it were merely the firm correctness of a female."
+        },
+        {
+          "position": 3,
+          "text": "Six in the third place: One looking at the course of his own life, to advance or recede accordingly."
+        },
+        {
+          "position": 4,
+          "text": "Six in the fourth place: One contemplating the glory of the kingdom. It will be advantageous for him, being such as he is, to seek to be a guest of the king."
+        },
+        {
+          "position": 5,
+          "text": "Nine in the fifth place: Its subject contemplating his own life-course. A superior man, he will thus fall into no error."
+        },
+        {
+          "position": 6,
+          "text": "Nine at the top: Its subject contemplating his character to see if it be indeed that of a superior man. He will not fall into error."
+        }
+      ]
+    },
+    {
+      "number": 21,
+      "name": "Biting Through",
+      "chinese": "噬嗑",
+      "pinyin": "shì kè",
+      "symbol": "䷔",
+      "binary": "100101",
+      "upper": "Fire",
+      "lower": "Thunder",
+      "judgment": "Biting through indicates successful progress. It will be advantageous to use legal constraints.",
+      "image": "Thunder and lightning form Biting Through. The ancient kings, in accordance with this, framed their penalties with intelligence, and promulgated their laws.",
+      "lines": [
+        {
+          "position": 1,
+          "text": "Nine at the beginning: One with his feet in the stocks and deprived of his toes. There will be no error."
+        },
+        {
+          "position": 2,
+          "text": "Six in the second place: One biting through the soft flesh, and going on to bite off the nose. There will be no error."
+        },
+        {
+          "position": 3,
+          "text": "Six in the third place: One gnawing dried flesh, and meeting with what is disagreeable. There will be occasion for some small regret, but no great error."
+        },
+        {
+          "position": 4,
+          "text": "Nine in the fourth place: One gnawing the flesh dried on the bone, and getting the pledges of money and arrows. It will be advantageous to him to realise the difficulty of his task and be firm, in which case there will be good fortune."
+        },
+        {
+          "position": 5,
+          "text": "Six in the fifth place: One gnawing at dried flesh, and finding the yellow gold. Let him be firm and correct, realising the peril of his position. There will be no error."
+        },
+        {
+          "position": 6,
+          "text": "Nine at the top: One wearing the cangue, and deprived of his ears. There will be evil."
+        }
+      ]
+    },
+    {
+      "number": 22,
+      "name": "Adornment",
+      "chinese": "賁",
+      "pinyin": "bì",
+      "symbol": "䷕",
+      "binary": "101001",
+      "upper": "Mountain",
+      "lower": "Fire",
+      "judgment": "Adornment indicates that there should be free course in what it denotes. There will be little advantage, however, if it be allowed to advance and take the lead.",
+      "image": "A mountain and fire under it form Adornment. The superior man, in accordance with this, throws a brilliancy around his various processes of government, but does not dare in a similar way to decide cases of criminal litigation.",
+      "lines": [
+        {
+          "position": 1,
+          "text": "Nine at the beginning: One adorning the way of his feet. He can discard a carriage and walk on foot."
+        },
+        {
+          "position": 2,
+          "text": "Six in the second place: One adorning his beard."
+        },
+        {
+          "position": 3,
+          "text": "Nine in the third place: Its subject with the appearance of being adorned and bedewed with rich favours. But let him ever maintain his firm correctness, and there will be good fortune."
+        },
+        {
+          "position": 4,
+          "text": "Six in the fourth place: One looking as if adorned, but only in white. As if mounted on a white horse, and furnished with wings, he seeks union with the one below, while the one who intervenes pursues, not as a robber, but intent on a matrimonial alliance."
+        },
+        {
+          "position": 5,
+          "text": "Six in the fifth place: Its subject adorned by the occupants of the heights and gardens. He bears his roll of silk, small and slight. He may appear stingy; but there will be good fortune in the end."
+        },
+        {
+          "position": 6,
+          "text": "Nine at the top: One with white as his only ornament. There will be no error."
+        }
+      ]
+    },
+    {
+      "number": 23,
+      "name": "Overthrowing",
+      "chinese": "剝",
+      "pinyin": "bō",
+      "symbol": "䷖",
+      "binary": "000001",
+      "upper": "Mountain",
+      "lower": "Earth",
+      "judgment": "Overthrowing indicates that in the state which it symbolises it will not be advantageous to make a movement in any direction whatever.",
+      "image": "The earth, and above it a mountain, which adheres to the earth, form Overthrowing. Superiors, in accordance with this, seek to strengthen those below them, to secure the peace and stability of their own position.",
+      "lines": [
+        {
+          "position": 1,
+          "text": "Six at the beginning: One overturning the couch by injuring its legs. The injury will go on to the destruction of all firm correctness, and there will be evil."
+        },
+        {
+          "position": 2,
+          "text": "Six in the second place: One overthrowing the couch by injuring its frame. The injury will go on to the destruction of all firm correctness, and there will be evil."
+        },
+        {
+          "position": 3,
+          "text": "Six in the third place: Its subject among the overthrowers; but there will be no error."
+        },
+        {
+          "position": 4,
+          "text": "Six in the fourth place: Its subject having overthrown the couch, and going to injure the skin of him who lies on it. There will be evil."
+        },
+        {
+          "position": 5,
+          "text": "Six in the fifth place: Its subject leading on the others like a string of fishes, and obtaining for them the favour that lights on the inmates of the palace. There will be advantage in every way."
+        },
+        {
+          "position": 6,
+          "text": "Nine at the top: Its subject as a great fruit which has not been eaten. The superior man finds the people again as a chariot carrying him. The small men by their course overthrow their own dwellings."
+        }
+      ]
+    },
+    {
+      "number": 24,
+      "name": "Return",
+      "chinese": "復",
+      "pinyin": "fù",
+      "symbol": "䷗",
+      "binary": "100000",
+      "upper": "Earth",
+      "lower": "Thunder",
+      "judgment": "Returning indicates that there will be free course and progress in what it denotes. Its subject finds no one to distress him in his exits and entrances; friends come to him, and no error is committed. He will return and repeat his proper course. In seven days comes his return. There will be advantage in whatever direction movement is made.",
+      "image": "The earth and thunder in the midst of it form Returning. The ancient kings, in accordance with this, on the day of the winter solstice, shut the gates of the passes from one state to another, so that the travelling merchants could not then pursue their journeys, nor the princes go on with the inspection of their states.",
+      "lines": [
+        {
+          "position": 1,
+          "text": "Nine at the beginning: Its subject returning from an error of no great extent, which would not proceed to anything requiring repentance. There will be great good fortune."
+        },
+        {
+          "position": 2,
+          "text": "Six in the second place: The admirable return of its subject. There will be good fortune."
+        },
+        {
+          "position": 3,
+          "text": "Six in the third place: One who has made repeated returns. The position is perilous, but there will be no error."
+        },
+        {
+          "position": 4,
+          "text": "Six in the fourth place: Its subject moving right in the centre among the others, and yet returning alone to his proper path."
+        },
+        {
+          "position": 5,
+          "text": "Six in the fifth place: The noble return of its subject. There will be no ground for repentance."
+        },
+        {
+          "position": 6,
+          "text": "Six at the top: Its subject all astray on the subject of returning. There will be evil. There will be calamities and errors. If with his views he put the hosts in motion, the end will be a great defeat, whose issues will extend to the ruler of the state. Even in ten years he will not be able to repair the disaster."
+        }
+      ]
+    },
+    {
+      "number": 25,
+      "name": "Freedom from Insincerity",
+      "chinese": "無妄",
+      "pinyin": "wú wàng",
+      "symbol": "䷘",
+      "binary": "100111",
+      "upper": "Heaven",
+      "lower": "Thunder",
+      "judgment": "Freedom from insincerity indicates great progress and success, while there will be advantage in being firm and correct. If its subject and his action be not correct, he will fall into errors, and it will not be advantageous for him to move in any direction.",
+      "image": "The thunder rolls all under the sky, and to everything there is given its nature, free from all insincerity. The ancient kings, in accordance with this, made their regulations in complete accordance with the seasons, thereby nourishing all things.",
+      "lines": [
+        {
+          "position": 1,
+          "text": "Nine at the beginning: Its subject free from all insincerity. His advance will be accompanied with good fortune."
+        },
+        {
+          "position": 2,
+          "text": "Six in the second place: One who reaps without having ploughed that he might reap, and gathers the produce of his third year's fields without having cultivated them the first year for that end. To such a one there will be advantage in whatever direction he may move."
+        },
+        {
+          "position": 3,
+          "text": "Six in the third place: Calamity happening to one who is free from insincerity; as in the case of an ox that has been tied up. A passer-by finds it and carries it off, while the people in the neighbourhood have the calamity of being accused and apprehended."
+        },
+        {
+          "position": 4,
+          "text": "Nine in the fourth place: A case in which, if its subject can remain firm and correct, there will be no error."
+        },
+        {
+          "position": 5,
+          "text": "Nine in the fifth place: One who is free from insincerity, and yet has fallen ill. Let him not use medicine, and he will have occasion for joy in his recovery."
+        },
+        {
+          "position": 6,
+          "text": "Nine at the top: Its subject free from insincerity, yet sure to fall into error, if he take action. His action will not be advantageous in any way."
+        }
+      ]
+    },
+    {
+      "number": 26,
+      "name": "Great Accumulation",
+      "chinese": "大畜",
+      "pinyin": "dà chù",
+      "symbol": "䷙",
+      "binary": "111001",
+      "upper": "Mountain",
+      "lower": "Heaven",
+      "judgment": "Under the conditions of great accumulation it will be advantageous to be firm and correct. If its subject do not seek to enjoy his revenues in his own family, without taking service at court, there will be good fortune. It will be advantageous for him to cross the great stream.",
+      "image": "A mountain, and in the midst of it heaven, form Great Accumulation. The superior man, in accordance with this, stores largely in his memory the words and deeds of former men, to subserve the accumulation of his virtue.",
+      "lines": [
+        {
+          "position": 1,
+          "text": "Nine at the beginning: Its subject in a position of peril. It will be advantageous for him to stop his advance."
+        },
+        {
+          "position": 2,
+          "text": "Nine in the second place: A carriage with the strap under it removed."
+        },
+        {
+          "position": 3,
+          "text": "Nine in the third place: Its subject urging his way with good horses. It will be advantageous for him to realise the difficulty of his course, and to be firm and correct, exercising himself daily in his charioteering and methods of defence; then there will be advantage in whatever direction he may advance."
+        },
+        {
+          "position": 4,
+          "text": "Six in the fourth place: The young bull, and yet having the piece of wood over his horns. There will be great good fortune."
+        },
+        {
+          "position": 5,
+          "text": "Six in the fifth place: The teeth of a castrated hog. There will be good fortune."
+        },
+        {
+          "position": 6,
+          "text": "Nine at the top: Its subject as in command of the firmament of heaven. There will be progress."
+        }
+      ]
+    },
+    {
+      "number": 27,
+      "name": "Nourishment",
+      "chinese": "頤",
+      "pinyin": "yí",
+      "symbol": "䷚",
+      "binary": "100001",
+      "upper": "Mountain",
+      "lower": "Thunder",
+      "judgment": "Nourishment indicates that with firm correctness there will be good fortune. We must look at what we are seeking to nourish, and by the exercise of our thoughts seek for the proper aliment.",
+      "image": "A mountain and under it thunder form Nourishment. The superior man, in accordance with this, enjoins watchfulness over our words, and the temperate regulation of our eating and drinking.",
+      "lines": [
+        {
+          "position": 1,
+          "text": "Nine at the beginning: It seems to be thus addressed: 'You leave your efficacious tortoise, and look at me till your lower jaw hangs down.' There will be evil."
+        },
+        {
+          "position": 2,
+          "text": "Six in the second place: One looking downwards for nourishment, which is contrary to what is proper; or seeking it from the height above, advance towards which will lead to evil."
+        },
+        {
+          "position": 3,
+          "text": "Six in the third place: One acting contrary to the method of nourishing. However firm he may be, there will be evil. For ten years let him not take any action, for it will not be in any way advantageous."
+        },
+        {
+          "position": 4,
+          "text": "Six in the fourth place: One looking downwards for the power to nourish. There will be good fortune. Looking with a tiger's downward unwavering glare, and with his desire that impels him to spring after spring, he will fall into no error."
+        },
+        {
+          "position": 5,
+          "text": "Six in the fifth place: One acting contrary to what is regular and proper; but if he abide in firmness, there will be good fortune. He should not, however, try to cross the great stream."
+        },
+        {
+          "position": 6,
+          "text": "Nine at the top: Him from whom comes the nourishing. His position is perilous, but there will be good fortune. It will be advantageous to cross the great stream."
+        }
+      ]
+    },
+    {
+      "number": 28,
+      "name": "Great Excess",
+      "chinese": "大過",
+      "pinyin": "dà guò",
+      "symbol": "䷛",
+      "binary": "011110",
+      "upper": "Lake",
+      "lower": "Wind",
+      "judgment": "Great excess suggests to us a beam that is weak. There will be advantage in moving under its conditions in any direction whatever; there will be success.",
+      "image": "Trees hidden beneath the waters of a marsh form Great Excess. The superior man, in accordance with this, stands up alone and has no fear, and keeps retired from the world without regret.",
+      "lines": [
+        {
+          "position": 1,
+          "text": "Six at the beginning: One placing mats of the white mao grass under things set on the ground. There will be no error."
+        },
+        {
+          "position": 2,
+          "text": "Nine in the second place: A decayed willow producing shoots, or an old husband in possession of his young wife. There will be advantage in every way."
+        },
+        {
+          "position": 3,
+          "text": "Nine in the third place: A beam that is weak. There will be evil."
+        },
+        {
+          "position": 4,
+          "text": "Nine in the fourth place: A beam curving upwards. There will be good fortune. If its subject looks for other help, there will be cause for regret."
+        },
+        {
+          "position": 5,
+          "text": "Nine in the fifth place: A decayed willow producing flowers, or an old wife in possession of her young husband. There will be occasion neither for blame nor for praise."
+        },
+        {
+          "position": 6,
+          "text": "Six at the top: Its subject with extraordinary boldness wading through a stream, till the water hides the crown of his head. There will be evil, but no ground for blame."
+        }
+      ]
+    },
+    {
+      "number": 29,
+      "name": "The Defile",
+      "chinese": "坎",
+      "pinyin": "kǎn",
+      "symbol": "䷜",
+      "binary": "010010",
+      "upper": "Water",
+      "lower": "Water",
+      "judgment": "The defile, here repeated, shows the possession of sincerity, through which the mind is penetrating. Action in accordance with this will be of high value.",
+      "image": "Water flowing on continuously forms the repeated defile. The superior man, in accordance with this, maintains constantly the virtue of his heart and the integrity of his conduct, and practises the business of instruction.",
+      "lines": [
+        {
+          "position": 1,
+          "text": "Six at the beginning: Its subject in the double defile, and yet entering a cavern within it. There will be evil."
+        },
+        {
+          "position": 2,
+          "text": "Nine in the second place: Its subject in all the peril of the defile. He will, however, get a little of the deliverance that he seeks."
+        },
+        {
+          "position": 3,
+          "text": "Six in the third place: Its subject, whether he comes or goes, confronted by a defile. All is peril to him and unrest. His endeavours will lead him into the cavern of the pit. There should be no action in such a case."
+        },
+        {
+          "position": 4,
+          "text": "Six in the fourth place: Its subject at a feast, with simply a bottle of spirits, and a subsidiary basket of rice, while the cups and bowls are only of earthenware. He introduces his important lessons as his ruler's intelligence admits. There will in the end be no error."
+        },
+        {
+          "position": 5,
+          "text": "Nine in the fifth place: The water of the defile not yet full, so that it might flow away; but order will soon be brought about. There will be no error."
+        },
+        {
+          "position": 6,
+          "text": "Six at the top: Its subject bound with cords of three strands or two strands, and placed in the thicket of thorns. But in three years he does not learn the course for him to pursue. There will be evil."
+        }
+      ]
+    },
+    {
+      "number": 30,
+      "name": "Brightness",
+      "chinese": "離",
+      "pinyin": "lí",
+      "symbol": "䷝",
+      "binary": "101101",
+      "upper": "Fire",
+      "lower": "Fire",
+      "judgment": "Clinging brightness indicates that it will be advantageous to be firm and correct, and that thus there will be free course and success. Let its subject also nourish a docility like that of the cow, and there will be good fortune.",
+      "image": "Brightness, repeated, forms the hexagram of brightness. The great man, in accordance with this, cultivates more and more his brilliant virtue, and diffuses its brightness over the four quarters of the land.",
+      "lines": [
+        {
+          "position": 1,
+          "text": "Nine at the beginning: One ready to move with confused steps. But he treads at the same time reverently, and there will be no mistake."
+        },
+        {
+          "position": 2,
+          "text": "Six in the second place: Its subject in his place in yellow. There will be great good fortune."
+        },
+        {
+          "position": 3,
+          "text": "Nine in the third place: Its subject in a position like that of the declining sun. Instead of playing on his instrument of earthenware, and singing to it, he utters the groans of an old man of eighty. There will be evil."
+        },
+        {
+          "position": 4,
+          "text": "Nine in the fourth place: The manner of its subject's coming. How abrupt it is, as with fire, with death, to be rejected by all!"
+        },
+        {
+          "position": 5,
+          "text": "Six in the fifth place: Its subject as one with tears flowing in torrents, and groaning in sorrow. There will be good fortune."
+        },
+        {
+          "position": 6,
+          "text": "Nine at the top: The king employing its subject in his punitive expeditions. Achieving admirable merit, he breaks only the chiefs of the rebels. Where his prisoners were not their associates, he does not punish. There will be no error."
+        }
+      ]
+    },
+    {
+      "number": 31,
+      "name": "Influence",
+      "chinese": "咸",
+      "pinyin": "xián",
+      "symbol": "䷞",
+      "binary": "001110",
+      "upper": "Lake",
+      "lower": "Mountain",
+      "judgment": "Mutual influence indicates that, on the fulfilment of the conditions implied in it, there will be free course and success. Its advantageousness will depend on the being firm and correct, as in marrying a young lady. There will be good fortune.",
+      "image": "A mountain and above it the waters of a marsh form Mutual Influence. The superior man, in accordance with this, keeps his mind free from pre-occupation, and open to receive the influences of others.",
+      "lines": [
+        {
+          "position": 1,
+          "text": "Six at the beginning: One moving his great toes."
+        },
+        {
+          "position": 2,
+          "text": "Six in the second place: One moving the calves of his leg. There will be evil. If he abide quiet in his place, there will be good fortune."
+        },
+        {
+          "position": 3,
+          "text": "Nine in the third place: One moving his thighs, and keeping close hold of those whom he follows. Going forward in this way will cause regret."
+        },
+        {
+          "position": 4,
+          "text": "Nine in the fourth place: That firm correctness which will lead to good fortune, and prevent all occasion for repentance. If its subject be unsettled in his movements, only his friends will follow his purpose."
+        },
+        {
+          "position": 5,
+          "text": "Nine in the fifth place: One moving the flesh along the spine above the heart. There will be no occasion for repentance."
+        },
+        {
+          "position": 6,
+          "text": "Six at the top: One moving his jaws and tongue."
+        }
+      ]
+    },
+    {
+      "number": 32,
+      "name": "Long Continuance",
+      "chinese": "恆",
+      "pinyin": "héng",
+      "symbol": "䷟",
+      "binary": "011100",
+      "upper": "Thunder",
+      "lower": "Wind",
+      "judgment": "Long continuance indicates successful progress and no error in what it denotes. But the advantage will come from being firm and correct; and movement in any direction whatever will be advantageous.",
+      "image": "Thunder and wind form Long Continuance. The superior man, in accordance with this, stands firm, and does not change his method of operation.",
+      "lines": [
+        {
+          "position": 1,
+          "text": "Six at the beginning: Its subject deeply desirous of long continuance. Even with firm correctness there will be evil; there will be no advantage in any way."
+        },
+        {
+          "position": 2,
+          "text": "Nine in the second place: All occasion for repentance disappearing."
+        },
+        {
+          "position": 3,
+          "text": "Nine in the third place: One who does not continuously maintain his virtue. There are those who will impute this to him as a disgrace. However firm he may be, there will be ground for regret."
+        },
+        {
+          "position": 4,
+          "text": "Nine in the fourth place: A field where there is no game."
+        },
+        {
+          "position": 5,
+          "text": "Six in the fifth place: Its subject continuously maintaining the virtue indicated by it. In a wife this will be fortunate; in a husband, evil."
+        },
+        {
+          "position": 6,
+          "text": "Six at the top: Its subject exciting himself to long continuance. There will be evil."
+        }
+      ]
+    },
+    {
+      "number": 33,
+      "name": "Retreat",
+      "chinese": "遯",
+      "pinyin": "dùn",
+      "symbol": "䷠",
+      "binary": "001111",
+      "upper": "Heaven",
+      "lower": "Mountain",
+      "judgment": "Retreat indicates successful progress in its circumstances. To a small extent it will still be advantageous to be firm and correct.",
+      "image": "The sky, and below it a mountain, form Retreat. The superior man, in accordance with this, keeps small men at a distance, not by showing that he hates them, but by his own dignified gravity.",
+      "lines": [
+        {
+          "position": 1,
+          "text": "Six at the beginning: A retiring tail. The position is perilous. No movement in any direction should be made."
+        },
+        {
+          "position": 2,
+          "text": "Six in the second place: Its subject holds fast as if by the hide of a yellow ox, which cannot be broken."
+        },
+        {
+          "position": 3,
+          "text": "Nine in the third place: One retiring but bound, to his distress and peril. If he were to deal with those who bind him as in nourishing a servant or concubine, it would be fortunate for him."
+        },
+        {
+          "position": 4,
+          "text": "Nine in the fourth place: Its subject retires notwithstanding his likings. In a superior man this will lead to good fortune; a small man cannot attain to this."
+        },
+        {
+          "position": 5,
+          "text": "Nine in the fifth place: Its subject retires in an admirable way. With firm correctness there will be good fortune."
+        },
+        {
+          "position": 6,
+          "text": "Nine at the top: Its subject retires in a noble way. It will be advantageous in every respect."
+        }
+      ]
+    },
+    {
+      "number": 34,
+      "name": "Great Strength",
+      "chinese": "大壯",
+      "pinyin": "dà zhuàng",
+      "symbol": "䷡",
+      "binary": "111100",
+      "upper": "Thunder",
+      "lower": "Heaven",
+      "judgment": "Great Strength indicates that it will be advantageous to be firm and correct.",
+      "image": "Heaven, and above it thunder, form Great Strength. The superior man, in accordance with this, does not take a step which is not according to propriety.",
+      "lines": [
+        {
+          "position": 1,
+          "text": "Nine at the beginning: Its subject manifests his strength in his toes. But advance will lead to evil, most certainly."
+        },
+        {
+          "position": 2,
+          "text": "Nine in the second place: With firm correctness there will be good fortune."
+        },
+        {
+          "position": 3,
+          "text": "Nine in the third place: In the case of a small man, one using all his strength; and in the case of a superior man, one whose rule is not to do so. Even with firm correctness the position would be perilous. It is like a ram butting against a fence, and getting his horns entangled."
+        },
+        {
+          "position": 4,
+          "text": "Nine in the fourth place: Firm correctness leads to good fortune, and occasion for repentance disappears. The fence is opened without the horns being entangled. The strength is like that in the wheel-spokes of a large wagon."
+        },
+        {
+          "position": 5,
+          "text": "Six in the fifth place: One who loses his ram-like strength in the ease of his position. But there will be no occasion for repentance."
+        },
+        {
+          "position": 6,
+          "text": "Six at the top: Like the ram butting against the fence, he is unable either to retreat, or to advance as he would fain do. There will not be advantage in any respect; but if he realises the difficulty of his position, there will be good fortune."
+        }
+      ]
+    },
+    {
+      "number": 35,
+      "name": "Progress",
+      "chinese": "晉",
+      "pinyin": "jìn",
+      "symbol": "䷢",
+      "binary": "000101",
+      "upper": "Fire",
+      "lower": "Earth",
+      "judgment": "In Progress we see a prince who secures the tranquillity of the people, presented on that account with numerous horses by the king, and three times in a day received at interviews.",
+      "image": "The earth, and the bright sun coming forth above it, form Progress. The superior man, according to this, gives himself to make more brilliant his bright virtue.",
+      "lines": [
+        {
+          "position": 1,
+          "text": "Six at the beginning: One wishing to advance, and at the same time kept back. Let him be firm and correct, and there will be good fortune. If trust be not reposed in him, let him maintain a large and generous mind, and there will be no error."
+        },
+        {
+          "position": 2,
+          "text": "Six in the second place: Its subject has the appearance of advancing, and yet of being sorrowful. If he be firm and correct, there will be good fortune. He will receive this great blessing from his grandmother."
+        },
+        {
+          "position": 3,
+          "text": "Six in the third place: Its subject is trusted by all around him. All occasion for repentance will disappear."
+        },
+        {
+          "position": 4,
+          "text": "Nine in the fourth place: Its subject has the appearance of advancing, but like a marmot. However firm and correct he may be, the position is one of peril."
+        },
+        {
+          "position": 5,
+          "text": "Six in the fifth place: All occasion for repentance disappears. But let him not concern himself about whether he shall fail or succeed. To advance will be fortunate, and in every way advantageous."
+        },
+        {
+          "position": 6,
+          "text": "Nine at the top: One advancing his horns. But he only uses them to punish the people of his own city. The position is perilous, but there will be good fortune. Yet however firm and correct he may be, there will be occasion for regret."
+        }
+      ]
+    },
+    {
+      "number": 36,
+      "name": "Darkening of the Light",
+      "chinese": "明夷",
+      "pinyin": "míng yí",
+      "symbol": "䷣",
+      "binary": "101000",
+      "upper": "Earth",
+      "lower": "Fire",
+      "judgment": "In the darkening of the light it will be advantageous to realise the difficulty of the position, and maintain firm correctness.",
+      "image": "The earth, and the bright sun entering within it, form the Darkening of the Light. The superior man, in accordance with this, conducts his management of men: he shows his intelligence by keeping it obscured.",
+      "lines": [
+        {
+          "position": 1,
+          "text": "Nine at the beginning: In the darkening of the light, its subject is flying, but with drooping wings. When the superior man is revolving his going away, he may be for three days without eating. Wherever he goes, the people there may speak derisively of him."
+        },
+        {
+          "position": 2,
+          "text": "Six in the second place: In the darkening of the light, its subject is wounded in the left thigh. He saves himself by the strength of a swift horse, and is fortunate."
+        },
+        {
+          "position": 3,
+          "text": "Nine in the third place: In the darkening of the light, its subject is hunting in the south, and takes the great chief of the darkness. He should not be eager to make all correct at once."
+        },
+        {
+          "position": 4,
+          "text": "Six in the fourth place: Its subject has just entered into the left side of the belly of the dark land. But he is able to carry out the mind appropriate to the darkening of the light, quitting the gate and courtyard."
+        },
+        {
+          "position": 5,
+          "text": "Six in the fifth place: The Count of Ji fulfilled the condition of the darkening of the light. It will be advantageous to be firm and correct."
+        },
+        {
+          "position": 6,
+          "text": "Six at the top: There is no light, but only obscurity. He had at first ascended to the top of the sky; his future shall be to go into the earth."
+        }
+      ]
+    },
+    {
+      "number": 37,
+      "name": "The Family",
+      "chinese": "家人",
+      "pinyin": "jiā rén",
+      "symbol": "䷤",
+      "binary": "101011",
+      "upper": "Wind",
+      "lower": "Fire",
+      "judgment": "For the regulation of the family, what is most advantageous is that the wife be firm and correct.",
+      "image": "Fire, and wind coming forth from it, form the Family. The superior man, in accordance with this, orders his words according to the truth of things, and his conduct so that it is uniformly consistent.",
+      "lines": [
+        {
+          "position": 1,
+          "text": "Nine at the beginning: Its subject establishes restrictive regulations in his household. Occasion for repentance will disappear."
+        },
+        {
+          "position": 2,
+          "text": "Six in the second place: Its subject takes nothing on herself, but in her central place attends to the preparation of the food. Through her firm correctness there will be good fortune."
+        },
+        {
+          "position": 3,
+          "text": "Nine in the third place: Its subject treats the members of the household with stern severity. There will be occasion for repentance, there will be peril, but there will also be good fortune. If the wife and children were to be smirking and chattering, in the end there would be occasion for regret."
+        },
+        {
+          "position": 4,
+          "text": "Six in the fourth place: Its subject enriches the family. There will be great good fortune."
+        },
+        {
+          "position": 5,
+          "text": "Nine in the fifth place: The influence of the king extends to his family. There need be no anxiety; there will be good fortune."
+        },
+        {
+          "position": 6,
+          "text": "Nine at the top: Its subject is possessed of sincerity and arrayed in majesty. In the end there will be good fortune."
+        }
+      ]
+    },
+    {
+      "number": 38,
+      "name": "Disunion",
+      "chinese": "睽",
+      "pinyin": "kuí",
+      "symbol": "䷥",
+      "binary": "110101",
+      "upper": "Fire",
+      "lower": "Lake",
+      "judgment": "Disunion indicates that, notwithstanding the condition of things, in small matters there will still be good success.",
+      "image": "Fire above, and the waters of a marsh below, form Disunion. The superior man, in accordance with this, where there is a general agreement, yet admits diversity.",
+      "lines": [
+        {
+          "position": 1,
+          "text": "Nine at the beginning: Occasion for repentance will disappear. He has lost his horses, but let him not seek for them; they will return of themselves. Should he meet with bad men, he will not err in communicating with them."
+        },
+        {
+          "position": 2,
+          "text": "Nine in the second place: Its subject happens to meet with his lord in a by-passage. There will be no error."
+        },
+        {
+          "position": 3,
+          "text": "Six in the third place: We see one whose carriage is dragged back, while the oxen in it are pushed back, and he is himself subjected to the shaving of his head and the cutting off of his nose. There is no good beginning, but there will be a good end."
+        },
+        {
+          "position": 4,
+          "text": "Nine in the fourth place: Its subject is solitary amidst the prevailing disunion. But he meets with the good man, and they blend their sincere desires together. The position is one of peril, but there will be no mistake."
+        },
+        {
+          "position": 5,
+          "text": "Six in the fifth place: Occasion for repentance will disappear. With his relative he unites closely and readily, as if he were biting through a piece of skin. When he goes forward, what error can there be?"
+        },
+        {
+          "position": 6,
+          "text": "Nine at the top: Its subject is solitary amidst the prevailing disunion. He seems to see a pig bearing on its back a load of mud, or fancies there is a carriage full of ghosts. He first bends his bow against him, and afterwards unbends it, for he discovers that he is not an assailant to injure, but a near relative. Going forward, he shall meet with genial rain, and there will be good fortune."
+        }
+      ]
+    },
+    {
+      "number": 39,
+      "name": "Difficulty",
+      "chinese": "蹇",
+      "pinyin": "jiǎn",
+      "symbol": "䷦",
+      "binary": "001010",
+      "upper": "Water",
+      "lower": "Mountain",
+      "judgment": "In the state of difficulty, advantage will be found in the south-west, and the contrary in the north-east. It will be advantageous also to meet with the great man. In these circumstances, with firmness and correctness, there will be good fortune.",
+      "image": "A mountain, and above it water, form Difficulty. The superior man, in accordance with this, turns round and examines himself, and cultivates his virtue.",
+      "lines": [
+        {
+          "position": 1,
+          "text": "Six at the beginning: Advance will lead to greater difficulties, while remaining stationary will afford ground for praise."
+        },
+        {
+          "position": 2,
+          "text": "Six in the second place: The minister of the king struggles with difficulty on difficulty, and not with a view to his own advantage."
+        },
+        {
+          "position": 3,
+          "text": "Nine in the third place: Its subject advances, but only to greater difficulties. He remains stationary, and returns to his former associates."
+        },
+        {
+          "position": 4,
+          "text": "Six in the fourth place: Its subject advances, but only to greater difficulties. He remains stationary, and unites with the one above."
+        },
+        {
+          "position": 5,
+          "text": "Nine in the fifth place: Its subject struggles with the greatest difficulties, while friends are coming to help him."
+        },
+        {
+          "position": 6,
+          "text": "Six at the top: Going forward only increases the difficulties, while remaining stationary will be productive of great merit. There will be good fortune, and it will be advantageous to meet with the great man."
+        }
+      ]
+    },
+    {
+      "number": 40,
+      "name": "Deliverance",
+      "chinese": "解",
+      "pinyin": "xiè",
+      "symbol": "䷧",
+      "binary": "010100",
+      "upper": "Thunder",
+      "lower": "Water",
+      "judgment": "In the state of deliverance, advantage will be found in the south-west. If no further operations be called for, there will be good fortune in coming back to the old conditions. If some operations be called for, there will be good fortune in the early conducting of them.",
+      "image": "Thunder and rain, with these phenomena in a state of manifestation, form Deliverance. The superior man, in accordance with this, forgives errors, and deals gently with crimes.",
+      "lines": [
+        {
+          "position": 1,
+          "text": "Six at the beginning: Its subject will commit no error."
+        },
+        {
+          "position": 2,
+          "text": "Nine in the second place: Its subject catches, in hunting, three foxes, and obtains the yellow arrows. With firm correctness there will be good fortune."
+        },
+        {
+          "position": 3,
+          "text": "Six in the third place: A porter with his burden, yet riding in a carriage. He will only tempt robbers to attack him. However firm and correct he may try to be, there will be cause for regret."
+        },
+        {
+          "position": 4,
+          "text": "Nine in the fourth place: It is said: 'Remove your toes. Friends will then come, between you and whom there will be mutual confidence.'"
+        },
+        {
+          "position": 5,
+          "text": "Six in the fifth place: The superior man executes his function of removing whatever is injurious, in which case there will be good fortune, and confidence in him will be shown even by the small men."
+        },
+        {
+          "position": 6,
+          "text": "Six at the top: We see a feudal prince shooting at a falcon on the top of a high wall, and hitting it. His action will be in every way advantageous."
+        }
+      ]
+    },
+    {
+      "number": 41,
+      "name": "Diminution",
+      "chinese": "損",
+      "pinyin": "sǔn",
+      "symbol": "䷨",
+      "binary": "110001",
+      "upper": "Mountain",
+      "lower": "Lake",
+      "judgment": "In diminution, if there be sincerity, there will be great good fortune: freedom from error; firmness and correctness that can be maintained; and advantage in every movement that shall be made. In what shall this sincerity be employed? Even in sacrifice two baskets of grain, though there be nothing else, may be presented.",
+      "image": "A mountain, and beneath it the waters of a marsh, form Diminution. The superior man, in accordance with this, restrains his wrath and represses his desires.",
+      "lines": [
+        {
+          "position": 1,
+          "text": "Nine at the beginning: Its subject suspends his own affairs, and hurries away to help another. He will commit no error, but let him consider how far he should contribute of what is his."
+        },
+        {
+          "position": 2,
+          "text": "Nine in the second place: It will be advantageous for its subject to maintain a firm correctness, and action on his part will be evil. He can give increase without taking from himself."
+        },
+        {
+          "position": 3,
+          "text": "Six in the third place: Of three men walking together, the number is diminished by one; and one, walking, finds his friend."
+        },
+        {
+          "position": 4,
+          "text": "Six in the fourth place: Its subject diminishes the ailment under which he labours by making another hasten to his help, and make him glad. There will be no error."
+        },
+        {
+          "position": 5,
+          "text": "Six in the fifth place: Parties add to his stores ten pairs of tortoise shells, and accept no refusal. There will be great good fortune."
+        },
+        {
+          "position": 6,
+          "text": "Nine at the top: Its subject gives increase to others without taking from himself. There will be no error. With firm correctness there will be good fortune. There will be advantage in every movement that shall be made. He will find ministers more than can be counted by their clans."
+        }
+      ]
+    },
+    {
+      "number": 42,
+      "name": "Increase",
+      "chinese": "益",
+      "pinyin": "yì",
+      "symbol": "䷩",
+      "binary": "100011",
+      "upper": "Wind",
+      "lower": "Thunder",
+      "judgment": "Increase indicates that there will be advantage in every movement which shall be undertaken, and that it will be advantageous even to cross the great stream.",
+      "image": "Wind and thunder form Increase. The superior man, in accordance with this, when he sees what is good, moves towards it; and when he sees his errors, he turns from them.",
+      "lines": [
+        {
+          "position": 1,
+          "text": "Nine at the beginning: It will be advantageous for its subject in his position to make a great movement. If it be greatly fortunate, no blame will be imputed to him."
+        },
+        {
+          "position": 2,
+          "text": "Six in the second place: Parties add to his stores ten pairs of tortoise shells whose oracles cannot be opposed. Let him persevere in being firm and correct, and there will be good fortune. Let the king employ them in presenting his offerings to God, and there will be good fortune."
+        },
+        {
+          "position": 3,
+          "text": "Six in the third place: Increase is given to its subject by means of what is evil, so that he shall be without blame. Let him be sincere and pursue the path of the Mean, like an officer who announces himself to his prince by the symbol of his rank."
+        },
+        {
+          "position": 4,
+          "text": "Six in the fourth place: Its subject pursues the due course. His advice to his prince is followed. He can with advantage be relied on in such a movement as that of removing the capital."
+        },
+        {
+          "position": 5,
+          "text": "Nine in the fifth place: Its subject with sincere heart seeks to benefit all below. There need be no question about it; the result will be great good fortune. All below will with sincere heart acknowledge his goodness."
+        },
+        {
+          "position": 6,
+          "text": "Nine at the top: We see one to whose increase none will contribute, while many will seek to assail him. He observes no regular rule in the ordering of his heart. There will be evil."
+        }
+      ]
+    },
+    {
+      "number": 43,
+      "name": "Resolution",
+      "chinese": "夬",
+      "pinyin": "guài",
+      "symbol": "䷪",
+      "binary": "111110",
+      "upper": "Lake",
+      "lower": "Heaven",
+      "judgment": "Resolution requires the exhibition of the culprit's guilt in the royal court, and a sincere and earnest appeal for sympathy and support, with a consciousness of the peril involved. He should also make announcement in his own city, and show that it will not be well to have recourse at once to arms. In this way there will be advantage in whatever he shall go forward to.",
+      "image": "Heaven, and the waters of a marsh mounting above it, form Resolution. The superior man, in accordance with this, bestows emolument on those below him, and dislikes allowing his gifts to accumulate undispensed.",
+      "lines": [
+        {
+          "position": 1,
+          "text": "Nine at the beginning: Its subject, in the pride of strength, advances with his toes. He goes forward, but will not succeed. There will be ground for blame."
+        },
+        {
+          "position": 2,
+          "text": "Nine in the second place: Its subject is full of apprehension and appealing for help. Late at night hostile measures may be taken against him, but he need not be anxious about them."
+        },
+        {
+          "position": 3,
+          "text": "Nine in the third place: Its subject is about to advance with strong and determined looks. There will be evil. But the superior man, bent on cutting off the criminal, will walk alone and encounter the rain, as if he were contaminated. In the end there will be no blame against him."
+        },
+        {
+          "position": 4,
+          "text": "Nine in the fourth place: One from whose buttocks the skin has been stripped, and who walks slowly and with difficulty. If he could act like a sheep led after its companions, occasion for repentance would disappear. But though he hear these words, he will not believe them."
+        },
+        {
+          "position": 5,
+          "text": "Nine in the fifth place: The small men are like a bed of purslane, which ought to be uprooted with the utmost determination. His action, in harmony with his central position, will lead to no error or blame."
+        },
+        {
+          "position": 6,
+          "text": "Six at the top: Its subject is without any helpers on whom to call. His end will be evil."
+        }
+      ]
+    },
+    {
+      "number": 44,
+      "name": "Meeting",
+      "chinese": "姤",
+      "pinyin": "gòu",
+      "symbol": "䷫",
+      "binary": "011111",
+      "upper": "Heaven",
+      "lower": "Wind",
+      "judgment": "Meeting shows a female who is bold and strong. It will not be good to marry such a female.",
+      "image": "Wind, and the sky above it, form Meeting. The sovereign, in accordance with this, delivers his charges, and promulgates his announcements throughout the four quarters of the kingdom.",
+      "lines": [
+        {
+          "position": 1,
+          "text": "Six at the beginning: Its subject should be kept tied and fastened to a metal drag, in which case with firm correctness there will be good fortune. But if he move in any direction, evil will appear. He will be like a lean pig, which is sure to keep jumping about."
+        },
+        {
+          "position": 2,
+          "text": "Nine in the second place: Its subject has a wallet of fish. There will be no error. But it will not be well to let the one below go forward to the guests."
+        },
+        {
+          "position": 3,
+          "text": "Nine in the third place: One from whose buttocks the skin has been stripped, so that he walks with difficulty. The position is perilous, but there will be no great error."
+        },
+        {
+          "position": 4,
+          "text": "Nine in the fourth place: Its subject has his wallet, but no fish in it. This will give rise to evil."
+        },
+        {
+          "position": 5,
+          "text": "Nine in the fifth place: A medlar tree overspreading the gourd beneath it. If he keep his brilliant qualities concealed, a good issue will descend as from Heaven."
+        },
+        {
+          "position": 6,
+          "text": "Nine at the top: Its subject receives others on his horns. There will be occasion for regret, but there will be no error."
+        }
+      ]
+    },
+    {
+      "number": 45,
+      "name": "Gathering",
+      "chinese": "萃",
+      "pinyin": "cuì",
+      "symbol": "䷬",
+      "binary": "000110",
+      "upper": "Lake",
+      "lower": "Earth",
+      "judgment": "In the state of gathering together, the king will repair to his ancestral temple. It will be advantageous also to meet with the great man; and then there will be progress and success, though the advantage must come through firm correctness. The use of great victims will conduce to good fortune; and in whatever direction movement is made, it will be advantageous.",
+      "image": "The earth, and the waters of a marsh raised above it, form Gathering Together. The superior man, in accordance with this, has his weapons of war put in good repair, to be prepared against unforeseen contingencies.",
+      "lines": [
+        {
+          "position": 1,
+          "text": "Six at the beginning: Its subject has a sincere desire for union, but is unable to carry it out, so that disorder is brought into the sphere of his union. If he cry out for help, all at once his tears will give place to smiles. He need not mind the temporary difficulty; as he goes forward, there will be no error."
+        },
+        {
+          "position": 2,
+          "text": "Six in the second place: Its subject is led forward. There will be good fortune, and freedom from error. There is entire sincerity, and in that case even the small offerings of the vernal sacrifice are acceptable."
+        },
+        {
+          "position": 3,
+          "text": "Six in the third place: Its subject strives after union and seems to sigh, yet nowhere finds any advantage. If he go forward, he will not err, though there may be some small cause for regret."
+        },
+        {
+          "position": 4,
+          "text": "Nine in the fourth place: If its subject be greatly fortunate, he will receive no blame."
+        },
+        {
+          "position": 5,
+          "text": "Nine in the fifth place: The union of all is under its subject in the place of dignity. There will be no error. If any do not have confidence in him, let him see to it that his virtue be great, long-continued, and firmly correct, and all occasion for repentance will disappear."
+        },
+        {
+          "position": 6,
+          "text": "Six at the top: Its subject is sighing and weeping; but there will be no error."
+        }
+      ]
+    },
+    {
+      "number": 46,
+      "name": "Ascending",
+      "chinese": "升",
+      "pinyin": "shēng",
+      "symbol": "䷭",
+      "binary": "011000",
+      "upper": "Earth",
+      "lower": "Wind",
+      "judgment": "Ascending indicates that there will be great progress and success. Seeking to meet with the great man, its subject need have no anxiety. Advance to the south will be fortunate.",
+      "image": "Wood, and the earth with the wood growing in the midst of it, form Ascending. The superior man, in accordance with this, pays careful attention to his virtue, and accumulates the small developments of it till it is high and great.",
+      "lines": [
+        {
+          "position": 1,
+          "text": "Six at the beginning: Its subject advances upwards with the welcome of those above him. There will be great good fortune."
+        },
+        {
+          "position": 2,
+          "text": "Nine in the second place: Its subject has that sincerity which will make even the small offerings of the vernal sacrifice acceptable. There will be no error."
+        },
+        {
+          "position": 3,
+          "text": "Nine in the third place: Its subject ascends upwards as into an empty city."
+        },
+        {
+          "position": 4,
+          "text": "Six in the fourth place: Its subject is employed by the king to present his offerings on Mount Qi. There will be good fortune; there will be no mistake."
+        },
+        {
+          "position": 5,
+          "text": "Six in the fifth place: Its subject is firmly correct, and therefore enjoys good fortune. He ascends the stairs with all due ceremony."
+        },
+        {
+          "position": 6,
+          "text": "Six at the top: Its subject advances upwards blindly. Advantage will be found in a ceaseless maintenance of firm correctness."
+        }
+      ]
+    },
+    {
+      "number": 47,
+      "name": "Being Straitened",
+      "chinese": "困",
+      "pinyin": "kùn",
+      "symbol": "䷮",
+      "binary": "010110",
+      "upper": "Lake",
+      "lower": "Water",
+      "judgment": "In the condition of being straitened there may yet be progress and success. For the firm and correct, the really great man, there will be good fortune. He will fall into no error. If he make speeches, his words cannot be made good.",
+      "image": "A marsh with no water in it forms the image of being straitened. The superior man, in accordance with this, will sacrifice his life in order to carry out his purpose.",
+      "lines": [
+        {
+          "position": 1,
+          "text": "Six at the beginning: Its subject, with bare buttocks, is straitened under the stump of a tree. He enters a dark valley, and for three years has no prospect of deliverance."
+        },
+        {
+          "position": 2,
+          "text": "Nine in the second place: Its subject is straitened amidst his wine and viands. There come to him anon the red knee-covers of the ruler. It will be well for him to maintain his sincerity as in sacrificing. Active operations on his part will lead to evil, but he will be free from blame."
+        },
+        {
+          "position": 3,
+          "text": "Six in the third place: Its subject is straitened before a frowning rock. He lays hold of thorns. He enters his palace, and does not see his wife. There will be evil."
+        },
+        {
+          "position": 4,
+          "text": "Nine in the fourth place: Its subject proceeds very slowly to help one who is straitened by the carriage adorned with metal in front of him. There will be occasion for regret, but the end will be good."
+        },
+        {
+          "position": 5,
+          "text": "Nine in the fifth place: Its subject has his nose and feet cut off. He is straitened by his ministers in their scarlet aprons. He is leisurely in his movements, however, and is satisfied. It will be well for him to be as sincere as in sacrificing to spiritual beings."
+        },
+        {
+          "position": 6,
+          "text": "Six at the top: Its subject is straitened, as if bound with creepers, or in a high and dangerous position, and saying to himself, 'If I move, I shall repent it.' If he does repent of former errors, there will be good fortune in his going forward."
+        }
+      ]
+    },
+    {
+      "number": 48,
+      "name": "The Well",
+      "chinese": "井",
+      "pinyin": "jǐng",
+      "symbol": "䷯",
+      "binary": "011010",
+      "upper": "Water",
+      "lower": "Wind",
+      "judgment": "Looking at the well, we think of how the site of a town may be changed, while its wells undergo no change. The water of a well never disappears and never receives any great increase, and those who come and those who go can draw and enjoy the benefit. If the drawing have nearly been accomplished, but, before the rope has quite reached the water, the bucket is broken, this is evil.",
+      "image": "Wood, and above it water, form the Well. The superior man, in accordance with this, comforts the people, and stimulates them to mutual helpfulness.",
+      "lines": [
+        {
+          "position": 1,
+          "text": "Six at the beginning: A well so muddy that men will not drink of it; or an old well to which neither birds nor other creatures resort."
+        },
+        {
+          "position": 2,
+          "text": "Nine in the second place: A well from which by a hole the water escapes and flows away to the shrimps; or one the water of which leaks away from a broken basket."
+        },
+        {
+          "position": 3,
+          "text": "Nine in the third place: A well which has been cleared out, but is not used. Our hearts are sorry for this, for the water might be drawn out and used. If the king were only intelligent, both he and we might receive the benefit of it."
+        },
+        {
+          "position": 4,
+          "text": "Six in the fourth place: A well, the lining of which is well laid. There will be no error."
+        },
+        {
+          "position": 5,
+          "text": "Nine in the fifth place: A clear, limpid well, whose cold spring is freely drunk."
+        },
+        {
+          "position": 6,
+          "text": "Six at the top: The water from the well is brought to the top, and it is not allowed to be covered. This suggests the idea of sincerity. There will be great good fortune."
+        }
+      ]
+    },
+    {
+      "number": 49,
+      "name": "Change",
+      "chinese": "革",
+      "pinyin": "gé",
+      "symbol": "䷰",
+      "binary": "101110",
+      "upper": "Lake",
+      "lower": "Fire",
+      "judgment": "What takes place in a time of change is believed in only after it has been accomplished. There will be great progress and success. Advantage will come from being firm and correct. In that case occasion for repentance will disappear.",
+      "image": "The trigram representing the waters of a marsh and that for fire in the midst of them form the hexagram of Change. The superior man, in accordance with this, regulates his calculations, and makes clear the seasons and times.",
+      "lines": [
+        {
+          "position": 1,
+          "text": "Nine at the beginning: Its subject is as if he were bound with the skin of a yellow ox."
+        },
+        {
+          "position": 2,
+          "text": "Six in the second place: Its subject makes his changes after some time has passed. Action taken will be fortunate. There will be no error."
+        },
+        {
+          "position": 3,
+          "text": "Nine in the third place: Action taken by its subject will be evil. Though he be firm and correct, his position is perilous. If the change he contemplates have been three times fully discussed, he will be believed in."
+        },
+        {
+          "position": 4,
+          "text": "Nine in the fourth place: Occasion for repentance disappears from its subject. Let him be believed in; and though he change existing ordinances, there will be good fortune."
+        },
+        {
+          "position": 5,
+          "text": "Nine in the fifth place: The great man produces his changes as the tiger does when he changes his stripes. Before he divines and proceeds to action, faith has been reposed in him."
+        },
+        {
+          "position": 6,
+          "text": "Six at the top: The superior man produces his changes as the leopard does when he changes his spots, while small men change their faces and show their obedience. To go forward now would lead to evil, but there will be good fortune in abiding firm and correct."
+        }
+      ]
+    },
+    {
+      "number": 50,
+      "name": "The Caldron",
+      "chinese": "鼎",
+      "pinyin": "dǐng",
+      "symbol": "䷱",
+      "binary": "011101",
+      "upper": "Fire",
+      "lower": "Wind",
+      "judgment": "The caldron gives the intimation of great progress and success.",
+      "image": "The trigram representing wood and above it that for fire form the hexagram of the Caldron. The superior man, in accordance with this, keeps his every position correct, and maintains secure the appointment of Heaven.",
+      "lines": [
+        {
+          "position": 1,
+          "text": "Six at the beginning: The caldron is overthrown and its feet turned up. But there will be advantage in its getting rid of what was bad in it. Or it shows us the concubine whose position is improved by means of her son. There will be no error."
+        },
+        {
+          "position": 2,
+          "text": "Nine in the second place: The caldron has the things to be cooked in it. If its subject can say, 'My enemy dislikes me, but he cannot approach me,' there will be good fortune."
+        },
+        {
+          "position": 3,
+          "text": "Nine in the third place: The caldron has the places of its ears changed. The progress of its subject is thus stopped. The fat flesh of the pheasant which is in the caldron will not be eaten. But the genial rain will come, and the grounds for repentance will disappear. There will be good fortune in the end."
+        },
+        {
+          "position": 4,
+          "text": "Nine in the fourth place: The caldron has its feet broken, and its contents, designed for the ruler's use, are overturned and spilt. Its subject will be made to blush for shame. There will be evil."
+        },
+        {
+          "position": 5,
+          "text": "Six in the fifth place: The caldron has yellow ears and rings of metal in them. There will be advantage through being firm and correct."
+        },
+        {
+          "position": 6,
+          "text": "Nine at the top: The caldron has rings of jade. There will be great good fortune, and all action taken will be in every way advantageous."
+        }
+      ]
+    },
+    {
+      "number": 51,
+      "name": "Thunder",
+      "chinese": "震",
+      "pinyin": "zhèn",
+      "symbol": "䷲",
+      "binary": "100100",
+      "upper": "Thunder",
+      "lower": "Thunder",
+      "judgment": "The hexagram of movement gives the intimation of ease and development. When the time of movement comes, the subject of the hexagram will be found looking out with apprehension, and yet smiling and talking cheerfully. When the movement, like a crash of thunder, terrifies all within a hundred li, he will be like the sincere worshipper who is not startled into letting go his ladle and cup of sacrificial spirits.",
+      "image": "The trigram representing thunder, being repeated, forms the hexagram of Movement. The superior man, in accordance with this, is fearful and apprehensive, cultivates his virtue, and examines his faults.",
+      "lines": [
+        {
+          "position": 1,
+          "text": "Nine at the beginning: When the movement approaches, its subject looks out and around with apprehension, and afterwards smiles and talks cheerfully. There will be good fortune."
+        },
+        {
+          "position": 2,
+          "text": "Six in the second place: When the movement approaches, its subject is in a position of peril. He judges it better to let go the articles in his possession, and to ascend a very lofty height. There is no occasion for him to pursue after the things he has let go; in seven days he will find them."
+        },
+        {
+          "position": 3,
+          "text": "Six in the third place: Its subject is distraught amid the startling movements going on. If those movements excite him to right action, there will be no mistake."
+        },
+        {
+          "position": 4,
+          "text": "Nine in the fourth place: Amid the startling movements, its subject is supinely sinking deeper in the mud."
+        },
+        {
+          "position": 5,
+          "text": "Six in the fifth place: Its subject goes and comes amidst the startling movements of the time, and is always in peril; but perhaps he will not incur loss, and will find business which he can accomplish."
+        },
+        {
+          "position": 6,
+          "text": "Six at the top: Amidst the startling movements of the time, its subject is in breathless dismay and looks round him with trembling apprehension. If he take action, there will be evil. If, while the startling movements have not reached his own person and his neighbourhood, he were to take precautions, there would be no error, though his relatives might still speak against him."
+        }
+      ]
+    },
+    {
+      "number": 52,
+      "name": "Resting",
+      "chinese": "艮",
+      "pinyin": "gèn",
+      "symbol": "䷳",
+      "binary": "001001",
+      "upper": "Mountain",
+      "lower": "Mountain",
+      "judgment": "When one's resting is like that of the back, and he loses all consciousness of self; when he walks in his courtyard, and does not see any of the persons in it, there will be no error.",
+      "image": "Two trigrams representing a mountain, one over the other, form the hexagram of Resting. The superior man, in accordance with this, does not go in his thoughts beyond the duties of the position in which he is.",
+      "lines": [
+        {
+          "position": 1,
+          "text": "Six at the beginning: Its subject keeps his toes at rest. There will be no error; but it will be advantageous for him to be persistently firm and correct."
+        },
+        {
+          "position": 2,
+          "text": "Six in the second place: Its subject keeps the calves of his legs at rest. He cannot help the one whom he follows, and is dissatisfied in his mind."
+        },
+        {
+          "position": 3,
+          "text": "Nine in the third place: Its subject keeps his loins at rest, and separates the ribs from the body below. The situation is perilous, and the heart glows with suppressed excitement."
+        },
+        {
+          "position": 4,
+          "text": "Six in the fourth place: Its subject keeps his trunk at rest. There will be no error."
+        },
+        {
+          "position": 5,
+          "text": "Six in the fifth place: Its subject keeps his jawbones at rest, so that his words are all orderly. Occasion for repentance will disappear."
+        },
+        {
+          "position": 6,
+          "text": "Nine at the top: Its subject is devotedly maintaining his restfulness. There will be good fortune."
+        }
+      ]
+    },
+    {
+      "number": 53,
+      "name": "Gradual Advance",
+      "chinese": "漸",
+      "pinyin": "jiàn",
+      "symbol": "䷴",
+      "binary": "001011",
+      "upper": "Wind",
+      "lower": "Mountain",
+      "judgment": "Gradual advance suggests to us the marriage of a young lady, and the good fortune attending it. There will be advantage in being firm and correct.",
+      "image": "The trigram representing a mountain and above it that for a tree form the hexagram of Gradual Advance. The superior man, in accordance with this, attains to and maintains his extraordinary virtue, and makes the manners of the people good.",
+      "lines": [
+        {
+          "position": 1,
+          "text": "Six at the beginning: The wild geese gradually approach the shore. A young officer in similar circumstances will be in a position of danger, and be spoken against; but there will be no error."
+        },
+        {
+          "position": 2,
+          "text": "Six in the second place: The geese gradually approach the large rocks, where they eat and drink joyfully and at ease. There will be good fortune."
+        },
+        {
+          "position": 3,
+          "text": "Nine in the third place: The geese have gradually advanced to the dry plains. It suggests also the idea of a husband who goes on an expedition from which he does not return, and of a wife who is pregnant, but will not nourish her child. There will be evil. The case symbolised might be advantageous in resisting plunderers."
+        },
+        {
+          "position": 4,
+          "text": "Six in the fourth place: The geese have gradually advanced to the trees. They may light on the flat branches. There will be no error."
+        },
+        {
+          "position": 5,
+          "text": "Nine in the fifth place: The geese have gradually advanced to the high mound. It suggests the idea of a wife who for three years does not become pregnant; but in the end the natural issue cannot be prevented. There will be good fortune."
+        },
+        {
+          "position": 6,
+          "text": "Nine at the top: The geese have gradually advanced to the large heights beyond. Their feathers can be used as ornaments. There will be good fortune."
+        }
+      ]
+    },
+    {
+      "number": 54,
+      "name": "The Younger Sister Given in Marriage",
+      "chinese": "歸妹",
+      "pinyin": "guī mèi",
+      "symbol": "䷵",
+      "binary": "110100",
+      "upper": "Thunder",
+      "lower": "Lake",
+      "judgment": "The marrying away of the younger sister indicates that, under the conditions which it denotes, action will be evil, and in no wise advantageous.",
+      "image": "The trigram representing the waters of a marsh and over it that for thunder form the hexagram of the younger sister given in marriage. The superior man, in accordance with this, having regard to the far-distant end, knows the mischief that may be done at the beginning.",
+      "lines": [
+        {
+          "position": 1,
+          "text": "Nine at the beginning: The younger sister is married off in a position ancillary to the real wife. It suggests the idea of a person lame on one leg who yet manages to tramp along. Going forward will be fortunate."
+        },
+        {
+          "position": 2,
+          "text": "Nine in the second place: She is blind of one eye, and yet able to see. There will be advantage in her maintaining the firm correctness of a solitary widow."
+        },
+        {
+          "position": 3,
+          "text": "Six in the third place: The younger sister who was to be married off is in a mean position. She returns and accepts an ancillary position."
+        },
+        {
+          "position": 4,
+          "text": "Nine in the fourth place: The younger sister who is to be married off protracts the time. She may be late in being married, but the time will come."
+        },
+        {
+          "position": 5,
+          "text": "Six in the fifth place: It reminds us of the marrying of the younger sister of king Ti-yi, when the sleeves of the princess were not equal to those of the still younger sister who accompanied her in an inferior capacity. The case suggests the thought of the moon almost full. There will be good fortune."
+        },
+        {
+          "position": 6,
+          "text": "Six at the top: The young lady bears the basket, but without anything in it, and the gentleman slaughters the sheep, but without blood flowing from it. There will be no advantage in any way."
+        }
+      ]
+    },
+    {
+      "number": 55,
+      "name": "Abundance",
+      "chinese": "豐",
+      "pinyin": "fēng",
+      "symbol": "䷶",
+      "binary": "101100",
+      "upper": "Thunder",
+      "lower": "Fire",
+      "judgment": "Abundance intimates progress and development. When a king has reached the point which the name denotes, there is no occasion to be anxious through fear of a change. Let him be as the sun at noon.",
+      "image": "The trigrams representing thunder and lightning combine to form the hexagram of Abundance. The superior man, in accordance with this, decides cases of litigation, and apportions punishments with exactness.",
+      "lines": [
+        {
+          "position": 1,
+          "text": "Nine at the beginning: Its subject meets with his mate. Though they are both of the same character, there will be no error. Advance will call forth approval."
+        },
+        {
+          "position": 2,
+          "text": "Six in the second place: Its subject is surrounded by screens so large and thick that at midday he can see from them the constellation of the Bushel. If he go and try to enlighten his ruler who is thus emblemed, he will make himself to be viewed with suspicion and dislike. Let him cherish his feeling of sincere devotion that he may thereby move his ruler's mind, and there will be good fortune."
+        },
+        {
+          "position": 3,
+          "text": "Nine in the third place: Its subject has an additional screen of a large and thick banner, through which at midday he can see the small Mei star. In the darkness he breaks his right arm; but there will be no error."
+        },
+        {
+          "position": 4,
+          "text": "Nine in the fourth place: Its subject is in a tent so large and thick that at midday he can see from it the constellation of the Bushel. But he meets with the subject of the first line, undivided like himself. There will be good fortune."
+        },
+        {
+          "position": 5,
+          "text": "Six in the fifth place: Its subject brings around him the men of brilliant ability. There will be occasion for congratulation and praise. There will be good fortune."
+        },
+        {
+          "position": 6,
+          "text": "Six at the top: Its subject has his house made large, but it only serves as a screen to his household. When he looks at his door, it is still, and there is nobody about it. For three years no one is to be seen. There will be evil."
+        }
+      ]
+    },
+    {
+      "number": 56,
+      "name": "The Traveller",
+      "chinese": "旅",
+      "pinyin": "lǚ",
+      "symbol": "䷷",
+      "binary": "001101",
+      "upper": "Fire",
+      "lower": "Mountain",
+      "judgment": "The Stranger intimates that, in the condition which it denotes, there may be some little attainment and progress. If the stranger or traveller be firm and correct as he ought to be, there will be good fortune.",
+      "image": "The trigram representing a mountain and above it that for fire form the hexagram of the Stranger. The superior man, in accordance with this, exerts his wisdom and caution in the use of punishments and in not allowing litigations to continue.",
+      "lines": [
+        {
+          "position": 1,
+          "text": "Six at the beginning: The stranger is mean and meanly occupied. It is thus that he brings on himself further calamity."
+        },
+        {
+          "position": 2,
+          "text": "Six in the second place: The stranger occupies his lodging-house, carrying with him his means of livelihood, and provided with good and trusty servants."
+        },
+        {
+          "position": 3,
+          "text": "Nine in the third place: The stranger burns his lodging-house, and has lost his servants. However firm and correct he try to be, he will be in peril."
+        },
+        {
+          "position": 4,
+          "text": "Nine in the fourth place: The traveller is in a resting-place, having also the means of livelihood and the axe, but still saying, 'I am not at ease in my mind.'"
+        },
+        {
+          "position": 5,
+          "text": "Six in the fifth place: Its subject is shooting a pheasant. He will lose his arrow, but in the end he will obtain praise and a high charge."
+        },
+        {
+          "position": 6,
+          "text": "Nine at the top: It suggests the idea of a bird burning its nest. The stranger, thus represented, first laughs and then cries out. He has lost his ox-like docility too readily and easily. There will be evil."
+        }
+      ]
+    },
+    {
+      "number": 57,
+      "name": "Penetration",
+      "chinese": "巽",
+      "pinyin": "xùn",
+      "symbol": "䷸",
+      "binary": "011011",
+      "upper": "Wind",
+      "lower": "Wind",
+      "judgment": "Penetration intimates that, under the conditions which it denotes, there will be some little attainment and progress. There will be advantage in movement onward in whatever direction. It will be advantageous also to see the great man.",
+      "image": "Two trigrams representing wind, following each other, form the hexagram of Penetration. The superior man, in accordance with this, reiterates his orders, and secures the practice of his affairs.",
+      "lines": [
+        {
+          "position": 1,
+          "text": "Six at the beginning: Its subject is now advancing, now receding. It would be advantageous for him to have the firm correctness of a brave soldier."
+        },
+        {
+          "position": 2,
+          "text": "Nine in the second place: The representative of penetration is beneath a couch, and employs diviners and exorcists in a way bordering on confusion. There will be good fortune and no error."
+        },
+        {
+          "position": 3,
+          "text": "Nine in the third place: Its subject penetrates only by violent and repeated efforts. There will be occasion for regret."
+        },
+        {
+          "position": 4,
+          "text": "Six in the fourth place: All occasion for repentance in its subject has passed away. He takes game for its threefold use in his hunting."
+        },
+        {
+          "position": 5,
+          "text": "Nine in the fifth place: With firm correctness there will be good fortune to its subject. All occasion for repentance will disappear, and all his movements will be advantageous. There may have been no good beginning, but there will be a good end. Three days before making any changes, let him give notice of them; and three days after, let him reconsider them. There will thus be good fortune."
+        },
+        {
+          "position": 6,
+          "text": "Nine at the top: The representative of penetration is beneath a couch, and has lost the axe with which he executed his decisions. However firm and correct he may try to be, there will be evil."
+        }
+      ]
+    },
+    {
+      "number": 58,
+      "name": "Pleasure",
+      "chinese": "兌",
+      "pinyin": "duì",
+      "symbol": "䷹",
+      "binary": "110110",
+      "upper": "Lake",
+      "lower": "Lake",
+      "judgment": "Pleasure intimates that, under its conditions, there will be progress and attainment. But it will be advantageous to be firm and correct.",
+      "image": "Two symbols representing the waters of a marsh, one over the other, form the hexagram of Pleasure. The superior man, in accordance with this, encourages the conversation of friends and the stimulus of their common practice.",
+      "lines": [
+        {
+          "position": 1,
+          "text": "Nine at the beginning: It shows the pleasure of inward harmony. There will be good fortune."
+        },
+        {
+          "position": 2,
+          "text": "Nine in the second place: It shows the pleasure arising from inward sincerity. There will be good fortune. Occasion for repentance will disappear."
+        },
+        {
+          "position": 3,
+          "text": "Six in the third place: Its subject brings round himself whatever can give pleasure. There will be evil."
+        },
+        {
+          "position": 4,
+          "text": "Nine in the fourth place: Its subject is deliberating about what to seek his pleasure in, and is not at rest. He borders on what would be injurious, but there will be cause for joy."
+        },
+        {
+          "position": 5,
+          "text": "Nine in the fifth place: Its subject is trusting in one who would injure him. The situation is perilous."
+        },
+        {
+          "position": 6,
+          "text": "Six at the top: It shows the pleasure of its subject in leading and attracting others."
+        }
+      ]
+    },
+    {
+      "number": 59,
+      "name": "Dispersion",
+      "chinese": "渙",
+      "pinyin": "huàn",
+      "symbol": "䷺",
+      "binary": "010011",
+      "upper": "Wind",
+      "lower": "Water",
+      "judgment": "Dispersion intimates that, under its conditions, there will be progress and success. The king goes to his ancestral temple; and it will be advantageous to cross the great stream. It will be advantageous to be firm and correct.",
+      "image": "The trigram representing water and that for wind moving above the water form the hexagram of Dispersion. The ancient kings, in accordance with this, presented offerings to God and established the ancestral temple.",
+      "lines": [
+        {
+          "position": 1,
+          "text": "Six at the beginning: Its subject is engaged in rescuing from the impending evil, and has the assistance of a strong horse. There will be good fortune."
+        },
+        {
+          "position": 2,
+          "text": "Nine in the second place: Amid the dispersion, its subject hurries to his contrivance for security. All occasion for repentance will disappear."
+        },
+        {
+          "position": 3,
+          "text": "Six in the third place: Its subject discards any regard to his own person. There will be no occasion for repentance."
+        },
+        {
+          "position": 4,
+          "text": "Six in the fourth place: Its subject scatters the different parties in the state, which leads to great good fortune. From the dispersion he collects again good men standing out, a crowd like a mound, which is what ordinary men would not have thought of."
+        },
+        {
+          "position": 5,
+          "text": "Nine in the fifth place: Amidst the dispersion, its subject issues his great announcements as the perspiration flows from his body. He scatters abroad also the accumulations in the royal granaries. There will be no error."
+        },
+        {
+          "position": 6,
+          "text": "Nine at the top: Its subject disposes of what may be called its bloody wounds, and goes and separates himself from its anxious fears. There will be no error."
+        }
+      ]
+    },
+    {
+      "number": 60,
+      "name": "Regulation",
+      "chinese": "節",
+      "pinyin": "jié",
+      "symbol": "䷻",
+      "binary": "110010",
+      "upper": "Water",
+      "lower": "Lake",
+      "judgment": "Regulation intimates that, under its conditions, there will be progress and attainment. But if the regulations which it prescribes be severe and difficult, they cannot be permanent.",
+      "image": "The trigram representing a lake, and above it that for water, form the hexagram of Regulation. The superior man, in accordance with this, constructs his methods of numbering and measurement, and discusses points of virtue and conduct.",
+      "lines": [
+        {
+          "position": 1,
+          "text": "Nine at the beginning: Its subject does not quit the courtyard outside his door. There will be no error."
+        },
+        {
+          "position": 2,
+          "text": "Nine in the second place: Its subject does not quit the courtyard inside his gate. There will be evil."
+        },
+        {
+          "position": 3,
+          "text": "Six in the third place: Its subject shows no appearance of observing the proper regulations, in which case we shall see him lamenting. But there will be no one to blame but himself."
+        },
+        {
+          "position": 4,
+          "text": "Six in the fourth place: Its subject is quietly and naturally attentive to all regulations. There will be progress and success."
+        },
+        {
+          "position": 5,
+          "text": "Nine in the fifth place: Its subject is sweetly and acceptably enacting his regulations. There will be good fortune. The onward progress with them will afford ground for admiration."
+        },
+        {
+          "position": 6,
+          "text": "Six at the top: Its subject is enacting regulations severe and difficult. Even with firmness and correctness there will be evil. But though there will be cause for repentance, it will by and by disappear."
+        }
+      ]
+    },
+    {
+      "number": 61,
+      "name": "Inmost Sincerity",
+      "chinese": "中孚",
+      "pinyin": "zhōng fú",
+      "symbol": "䷼",
+      "binary": "110011",
+      "upper": "Wind",
+      "lower": "Lake",
+      "judgment": "Inmost sincerity moves even pigs and fish, and leads to good fortune. There will be advantage in crossing the great stream. There will be advantage in being firm and correct.",
+      "image": "The trigram representing the waters of a marsh and that for wind above it form the hexagram of Inmost Sincerity. The superior man, in accordance with this, deliberates about cases of litigation and delays the infliction of death.",
+      "lines": [
+        {
+          "position": 1,
+          "text": "Nine at the beginning: Its subject is resting in himself. There will be good fortune. If he sought to any other, he would not find rest."
+        },
+        {
+          "position": 2,
+          "text": "Nine in the second place: Its subject is like the crane crying out in her hidden retirement, and her young ones responding to her. It is as if it were said, 'I have a cup of good spirits,' and the response were, 'I will partake of it with you.'"
+        },
+        {
+          "position": 3,
+          "text": "Six in the third place: Its subject has met with his mate. Now he beats his drum, and now he leaves off. Now he weeps, and now he sings."
+        },
+        {
+          "position": 4,
+          "text": "Six in the fourth place: Its subject is like the moon nearly full, and like a horse in a chariot whose fellow disappears. There will be no error."
+        },
+        {
+          "position": 5,
+          "text": "Nine in the fifth place: Its subject is perfectly sincere, and links others to him in closest union. There will be no error."
+        },
+        {
+          "position": 6,
+          "text": "Nine at the top: Its subject is like chanticleer trying to mount to heaven. Even with firm correctness there will be evil."
+        }
+      ]
+    },
+    {
+      "number": 62,
+      "name": "Small Excess",
+      "chinese": "小過",
+      "pinyin": "xiǎo guò",
+      "symbol": "䷽",
+      "binary": "001100",
+      "upper": "Thunder",
+      "lower": "Mountain",
+      "judgment": "Small excess indicates that, in the circumstances which it implies, there will be progress and attainment. But it will be advantageous to be firm and correct. What the name denotes may be done in small affairs, but not in great affairs. It is like the notes that come down from a bird on the wing: to descend is better than to ascend. There will in this way be great good fortune.",
+      "image": "The trigram representing a hill and that for thunder above it form the hexagram of Small Excess. The superior man, in accordance with this, in his conduct exceeds in humility, in mourning exceeds in sorrow, and in his expenditure exceeds in economy.",
+      "lines": [
+        {
+          "position": 1,
+          "text": "Six at the beginning: It suggests the idea of a bird flying, and ascending till the issue is evil."
+        },
+        {
+          "position": 2,
+          "text": "Six in the second place: Its subject passes by his grandfather, and meets with his grandmother; not attempting anything against his ruler, but meeting him as his minister. There will be no error."
+        },
+        {
+          "position": 3,
+          "text": "Nine in the third place: Its subject takes no extraordinary precautions against danger, and some in consequence find opportunity to assail and injure him. There will be evil."
+        },
+        {
+          "position": 4,
+          "text": "Nine in the fourth place: Its subject falls into no error, but meets the exigency of his situation without exceeding in his natural course. If he go forward, there will be peril, and he must be cautious. There is no occasion to be using firmness perpetually."
+        },
+        {
+          "position": 5,
+          "text": "Six in the fifth place: It suggests the idea of dense clouds, but no rain, coming from our borders in the west. It also shows the prince shooting his arrow, and taking the bird in a cave."
+        },
+        {
+          "position": 6,
+          "text": "Six at the top: Its subject does not meet the exigency of his situation, and exceeds his proper course. It suggests the idea of a bird flying far aloft. There will be evil. The case is what is called one of calamity and self-produced injury."
+        }
+      ]
+    },
+    {
+      "number": 63,
+      "name": "Completion",
+      "chinese": "既濟",
+      "pinyin": "jì jì",
+      "symbol": "䷾",
+      "binary": "101010",
+      "upper": "Water",
+      "lower": "Fire",
+      "judgment": "Completion intimates progress and success in small matters. There will be advantage in being firm and correct. There has been good fortune in the beginning; there may be disorder in the end.",
+      "image": "The trigram representing fire and that for water above it form the hexagram of Completion. The superior man, in accordance with this, thinks of evil that may come, and beforehand guards against it.",
+      "lines": [
+        {
+          "position": 1,
+          "text": "Nine at the beginning: Its subject is like a driver who drags back his wheel, or like a fox which has wet his tail. There will be no error."
+        },
+        {
+          "position": 2,
+          "text": "Six in the second place: Its subject is like a wife who has lost her carriage-screen. There is no occasion to go in pursuit of it. In seven days she will find it."
+        },
+        {
+          "position": 3,
+          "text": "Nine in the third place: It suggests the case of Kao Tsung, who attacked the Demon region, but was three years in subduing it. Small men should not be employed in such enterprises."
+        },
+        {
+          "position": 4,
+          "text": "Six in the fourth place: Its subject has rags provided against any leak in his boat, and is on his guard all day long."
+        },
+        {
+          "position": 5,
+          "text": "Nine in the fifth place: Its subject is like the neighbour in the east who slaughters an ox for his sacrifice; but this is not equal to the small spring sacrifice of the neighbour in the west, whose sincerity receives the blessing."
+        },
+        {
+          "position": 6,
+          "text": "Six at the top: Its subject has even his head immersed. The position is perilous."
+        }
+      ]
+    },
+    {
+      "number": 64,
+      "name": "Before Completion",
+      "chinese": "未濟",
+      "pinyin": "wèi jì",
+      "symbol": "䷿",
+      "binary": "010101",
+      "upper": "Fire",
+      "lower": "Water",
+      "judgment": "The state before completion intimates progress and success in the circumstances which it implies. We see a young fox that has nearly crossed the stream, when its tail gets immersed. There will be no advantage in any way.",
+      "image": "The trigram representing water and that for fire above it form the hexagram of things not yet completed. The superior man, in accordance with this, carefully discriminates among the qualities of things, and the different positions they naturally occupy.",
+      "lines": [
+        {
+          "position": 1,
+          "text": "Six at the beginning: Its subject is like a fox whose tail gets immersed. There will be occasion for regret."
+        },
+        {
+          "position": 2,
+          "text": "Nine in the second place: Its subject drags back his carriage-wheel. With firmness and correctness there will be good fortune."
+        },
+        {
+          "position": 3,
+          "text": "Six in the third place: With the state of things not yet remedied, its subject advances on, which will lead to evil. But there will be advantage in trying to cross the great stream."
+        },
+        {
+          "position": 4,
+          "text": "Nine in the fourth place: By firm correctness its subject obtains good fortune, so that all occasion for repentance disappears. Let him stir himself up, as if he were invading the Demon region, where for three years rewards will come to him and his troops from the great kingdom."
+        },
+        {
+          "position": 5,
+          "text": "Six in the fifth place: By firm correctness its subject obtains good fortune, and has no occasion for repentance. We see in him the brightness of a superior man, and the possession of sincerity. There will be good fortune."
+        },
+        {
+          "position": 6,
+          "text": "Nine at the top: Its subject is full of confidence and therefore feasting quietly. There will be no error. If he cherish this confidence till he is like the fox who gets his head immersed, it will fail of what is right."
+        }
+      ]
+    }
+  ]
+}
