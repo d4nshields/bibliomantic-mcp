@@ -131,7 +131,8 @@ uv run mypy src
 ```
 
 Design notes live in [`docs/`](docs/): the [architecture](docs/ARCHITECTURE.md), the
-[SDK notes](docs/SDK-NOTES.md), and the [decision records](docs/adr/). The originating
+[SDK notes](docs/SDK-NOTES.md), the [decision records](docs/adr/), and the
+[talk notes](docs/TALK-NOTES.md) for the DevFest 2026 Toronto walkthrough. The originating
 specification is [`docs/BRIEF.md`](docs/BRIEF.md).
 
 ## Licence
