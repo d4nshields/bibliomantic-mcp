@@ -56,11 +56,70 @@ All tools are annotated read-only and closed-world, and return structured output
 | `consult_decision` | `situation`, `options` | Cast, then use the reading as a lens on each option |
 | `study_hexagram` | `number` (completes to 1–64) | Read `iching://hexagram/{number}` and teach it |
 
-## Run
+## Install and run
+
+Requirements: [uv](https://docs.astral.sh/uv/) (it fetches Python 3.12 if needed). Node.js
+only if you want the MCP Inspector.
 
 ```console
-uv run bibliomantic-mcp            # stdio (default)
+git clone <this repo> bibliomantic-mcp && cd bibliomantic-mcp
+uv sync
+uv run bibliomantic-mcp                                      # stdio (the default)
+uv run bibliomantic-mcp --transport streamable-http --port 8000   # http://127.0.0.1:8000/mcp
 ```
+
+Options: `--transport {stdio,streamable-http}`, `--host` (default `127.0.0.1`), `--port`
+(default `8000`), `--log-level` (default `INFO`). Logs go to stderr; on stdio, stdout carries
+only the protocol. `python -m bibliomantic_mcp` works the same way.
+
+### Claude Desktop
+
+Add this to `claude_desktop_config.json` (macOS: `~/Library/Application Support/Claude/`,
+Windows: `%APPDATA%\Claude\`), then fully quit and reopen Claude Desktop:
+
+```json
+{
+  "mcpServers": {
+    "bibliomantic": {
+      "command": "uv",
+      "args": ["run", "--directory", "/absolute/path/to/bibliomantic-mcp", "bibliomantic-mcp"]
+    }
+  }
+}
+```
+
+If Claude Desktop cannot find `uv`, use the absolute path from `which uv` as `command`.
+
+### Claude Code
+
+```console
+claude mcp add bibliomantic -- uv run --directory /absolute/path/to/bibliomantic-mcp bibliomantic-mcp
+```
+
+Or, against a server already running over HTTP:
+
+```console
+claude mcp add --transport http bibliomantic http://127.0.0.1:8000/mcp
+```
+
+Run `/mcp` in a Claude Code session to confirm it is connected.
+
+### MCP Inspector
+
+```console
+npx @modelcontextprotocol/inspector uv run --directory "$PWD" bibliomantic-mcp
+```
+
+This opens the Inspector UI with the server launched over stdio. For HTTP, start the server
+with `--transport streamable-http`, then connect the Inspector to `http://127.0.0.1:8000/mcp`
+with transport "Streamable HTTP". The Inspector also has a scriptable CLI mode:
+
+```console
+npx @modelcontextprotocol/inspector --cli uv run --directory "$PWD" bibliomantic-mcp --method tools/list
+```
+
+(`uv run mcp dev` is not used: it needs a module-level server object, and this project builds
+its server in a factory. See [ADR-0004](docs/adr/0004-server-factory-and-inspector.md).)
 
 ## Development
 
@@ -71,8 +130,8 @@ uv run ruff check && uv run ruff format --check
 uv run mypy src
 ```
 
-Design notes live in [`docs/`](docs/): the [SDK notes](docs/SDK-NOTES.md) and the
-[decision records](docs/adr/). The originating
+Design notes live in [`docs/`](docs/): the [architecture](docs/ARCHITECTURE.md), the
+[SDK notes](docs/SDK-NOTES.md), and the [decision records](docs/adr/). The originating
 specification is [`docs/BRIEF.md`](docs/BRIEF.md).
 
 ## Licence
