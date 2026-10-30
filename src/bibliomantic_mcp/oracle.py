@@ -85,6 +85,14 @@ def hexagram_from_number(book: Book, number: int) -> Hexagram:
     return book.hexagrams[number]
 
 
+def parse_hexagram_number(text: str) -> int:
+    """Read a hexagram number typed as text (a URI segment, a prompt argument)."""
+    stripped = text.strip()
+    if not (stripped.isascii() and stripped.isdigit()) or not 1 <= int(stripped) <= HEXAGRAM_COUNT:
+        raise NotInBook(f"Hexagram number must be 1–{HEXAGRAM_COUNT}, not {text!r}")
+    return int(stripped)
+
+
 def hexagram_from_binary(book: Book, binary: str) -> Hexagram:
     if len(binary) != 6 or set(binary) - {"0", "1"}:
         raise NotInBook(f"A hexagram binary is six 0/1 characters, bottom first: {binary!r}")

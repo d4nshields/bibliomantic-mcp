@@ -16,8 +16,8 @@ from mcp.types import CallToolResult, TextContent, ToolAnnotations
 from pydantic import Field
 
 from bibliomantic_mcp import oracle, render
-from bibliomantic_mcp.lifespan import AppState, book_from
 from bibliomantic_mcp.models import HEXAGRAM_COUNT, Cast, Hexagram, MethodDescription, Trigram
+from bibliomantic_mcp.state import AppState, book_from
 
 logger = logging.getLogger(__name__)
 

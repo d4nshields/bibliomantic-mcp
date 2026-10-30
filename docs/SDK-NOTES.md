@@ -24,11 +24,11 @@ what we relied on.
 | Tools | `@mcp.tool(title=, annotations=ToolAnnotations(...))`; input schema from type hints and `Annotated[..., Field(...)]` | `tools.py` |
 | Structured output | Return type annotation **is** the `output_schema`; a returned model fills both `content` (JSON text) and `structured_content` | `tools.py` |
 | Custom text plus a schema | Return `Annotated[CallToolResult, Model]`: you write `content`, the SDK still advertises `Model` as `output_schema` and validates `structured_content` against it | `tools.py` (`cast_hexagram`) |
-| Resources | `@mcp.resource(uri, title=, description=, mime_type=)`; `{param}` makes a template, listed under `resources/templates/list`; template values are converted to the parameter's type | `resources.py` |
+| Resources | `@mcp.resource(uri, title=, description=, mime_type=)`; `{param}` makes a template, listed under `resources/templates/list`. Fixed resources can also be registered as objects with `server.add_resource(TextResource(...))` | `resources.py` |
 | Completions | One `@mcp.completion()` per server: `async def (ref, argument, context) -> Completion \| None`. The SDK does **not** filter by prefix; we do | `resources.py` |
 | Prompts | `@mcp.prompt(title=)`; argument descriptions from `Annotated[str, Field(description=)]`; a returned `str` becomes one user message | `prompts.py` |
 | Context | Declare `ctx: Context[AppState]` (from `mcp.server.mcpserver`); `get_context()` is gone | every handler |
-| Lifespan | `@asynccontextmanager` receiving the server, yielding one object; reached as `ctx.request_context.lifespan_context`. Runs once per server, also under Streamable HTTP | `lifespan.py` |
+| Lifespan | `@asynccontextmanager` receiving the server, yielding one object; reached as `ctx.request_context.lifespan_context`. Runs once per server, also under Streamable HTTP | `server.py`, `state.py` |
 | Errors | `ToolError` (model sees it), `MCPError` (protocol error, model never sees it), anything else (opaque `is_error` result, traceback logged) | `tools.py` |
 | Missing resource | `ResourceNotFoundError` → JSON-RPC `-32602` with the URI in `error.data` | `resources.py` |
 | Imports | `from mcp.server.mcpserver.exceptions import ToolError, ResourceNotFoundError`; `from mcp.types import ToolAnnotations, CallToolResult, TextContent, Completion, ...` | |
@@ -61,12 +61,24 @@ what we relied on.
    builds its server in `create_server()` (no globals), so we run the Inspector against the
    console script instead: `npx @modelcontextprotocol/inspector uv run --directory <repo> bibliomantic-mcp`.
    That is what `mcp dev` does underneath, minus the import. See ADR-0004.
-6. **Completion handlers get no `Context`.** The `@mcp.completion()` handler is called as
-   `(ref, argument, context)` with no lifespan access. Completion values therefore come from
-   domain constants (`HEXAGRAM_COUNT`, `TRIGRAM_NAMES` in `models.py`), which the book loader
-   validates the data against. See ADR-0005.
+6. **Two handlers get no `Context`.** A *static* resource (no `{template}` variable) may not
+   declare a `Context` parameter: the decorator raises `ValueError`. The `@mcp.completion()`
+   handler is called as `(ref, argument, context)` with no lifespan access. So the lifespan
+   publishes the two static resources once the book is loaded, and completion values come from
+   domain constants that the book loader checks the data against. See ADR-0005.
 7. **`ToolError` text gets a prefix.** The model sees
    `Error executing tool <name>: <your message>`, not just your message.
 8. **`MCPServer(...)` configures logging.** The constructor calls `logging.basicConfig()` at
    `log_level`. `basicConfig` does nothing once a handler exists, so `cli.py` configures logging
    first and its configuration wins.
+9. **Template type conversion errors are internal errors.** A template parameter typed `int`
+   that receives `abc` produces `-32603` ("Error creating resource from template"), not
+   not-found. `iching://hexagram/{number}` therefore takes `number: str` and parses it itself,
+   so every bad number is a clean `ResourceNotFoundError` (`-32602`).
+10. **Prompt argument validation errors are internal errors too.** A `Field(ge=1, le=64)`
+    failure on a prompt argument becomes `-32603` "Error rendering prompt". `study_hexagram`
+    validates its `number` itself and raises `MCPError(INVALID_PARAMS, ...)`. A prompt has no
+    `is_error` result for a model to read, so a protocol error is the right channel.
+11. **`MCPServer.completion()` is unannotated** in SDK 2.3.0, so `mypy --strict` reports
+    `untyped-decorator` / `no-untyped-call` on it. `resources.py` carries one narrow
+    `# type: ignore[...]` on that line, with a comment, rather than loosening mypy anywhere else.

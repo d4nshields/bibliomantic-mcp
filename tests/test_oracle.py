@@ -190,3 +190,14 @@ def test_method_probabilities_are_computed() -> None:
         (9, 3, "1/8"),
     ]
     assert "Legge" in method.source
+
+
+@pytest.mark.parametrize(("text", "number"), [("1", 1), (" 64 ", 64), ("07", 7)])
+def test_parse_hexagram_number(text: str, number: int) -> None:
+    assert oracle.parse_hexagram_number(text) == number
+
+
+@pytest.mark.parametrize("text", ["0", "65", "abc", "", "-1", "1.5", "٣"])
+def test_parse_hexagram_number_rejects(text: str) -> None:
+    with pytest.raises(oracle.NotInBook, match="1–64"):
+        oracle.parse_hexagram_number(text)
