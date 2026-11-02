@@ -82,9 +82,17 @@ def hexagram_from_number(book: Book, number: int) -> Hexagram:
 def parse_hexagram_number(text: str) -> int:
     """Read a hexagram number typed as text (a URI segment, a prompt argument)."""
     stripped = text.strip()
-    if not (stripped.isascii() and stripped.isdigit()) or not 1 <= int(stripped) <= HEXAGRAM_COUNT:
+    # Leading zeros are fine ("07"). Dropping them and capping the length before int()
+    # matters: int() raises ValueError on strings past 4,300 digits, which would surface
+    # as an internal error instead of "not in the book".
+    digits = stripped.lstrip("0")
+    if (
+        not (stripped.isascii() and stripped.isdigit())
+        or len(digits) > len(str(HEXAGRAM_COUNT))
+        or not 1 <= int(digits or "0") <= HEXAGRAM_COUNT
+    ):
         raise NotInBook(f"Hexagram number must be 1–{HEXAGRAM_COUNT}, not {text!r}")
-    return int(stripped)
+    return int(digits)
 
 
 def hexagram_from_binary(book: Book, binary: str) -> Hexagram:

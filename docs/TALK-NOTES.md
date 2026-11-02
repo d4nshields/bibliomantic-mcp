@@ -20,7 +20,8 @@ Open three terminals:
 | B | `uv run bibliomantic-mcp --transport streamable-http --port 8000 --log-level DEBUG` | the same server over **HTTP**, with its log visible |
 | C | editor / shell | code, and Inspector CLI one-liners |
 
-Claude Desktop configured as in the README ("Claude Desktop"), fully restarted.
+Claude Desktop configured to run this checkout, as in the README ("Installation & Configuration",
+Option 2), fully restarted.
 
 Inspector basics: the left panel has **Transport Type**, **Command**/**URL**, and **Connect**.
 Across the top are the **Resources**, **Prompts** and **Tools** tabs. Each tab has a **List …**

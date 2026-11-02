@@ -81,7 +81,8 @@ def test_default_rng_is_the_system_csprng(monkeypatch: pytest.MonkeyPatch) -> No
             used.append("system")
             return super().getrandbits(k)
 
-    monkeypatch.setattr(oracle.secrets, "SystemRandom", Spy)
+    # A dotted-path target: `oracle.secrets` is not a public attribute, so mypy rejects it.
+    monkeypatch.setattr("bibliomantic_mcp.oracle.secrets.SystemRandom", Spy)
     oracle.cast(BOOK)
     assert len(used) == 18  # 6 lines x 3 coins
 
@@ -212,7 +213,14 @@ def test_parse_hexagram_number(text: str, number: int) -> None:
     assert oracle.parse_hexagram_number(text) == number
 
 
-@pytest.mark.parametrize("text", ["0", "65", "abc", "", "-1", "1.5", "٣"])
+@pytest.mark.parametrize("text", ["0", "65", "abc", "", "-1", "1.5", "٣", "000", "100"])
 def test_parse_hexagram_number_rejects(text: str) -> None:
     with pytest.raises(oracle.NotInBook, match="1–64"):
         oracle.parse_hexagram_number(text)
+
+
+def test_parse_hexagram_number_handles_inputs_past_the_int_digit_limit() -> None:
+    """int() refuses strings over 4,300 digits; those must still be a clean miss."""
+    with pytest.raises(oracle.NotInBook, match="1–64"):
+        oracle.parse_hexagram_number("9" * 5000)
+    assert oracle.parse_hexagram_number("0" * 5000 + "7") == 7

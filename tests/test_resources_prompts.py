@@ -73,7 +73,13 @@ async def test_method_resource_matches_the_tool(client: Client) -> None:
 
 
 @pytest.mark.parametrize(
-    "uri", ["iching://hexagram/0", "iching://hexagram/65", "iching://hexagram/abc"]
+    "uri",
+    [
+        "iching://hexagram/0",
+        "iching://hexagram/65",
+        "iching://hexagram/abc",
+        pytest.param("iching://hexagram/" + "9" * 5000, id="past-int-digit-limit"),
+    ],
 )
 async def test_bad_hexagram_is_resource_not_found(client: Client, uri: str) -> None:
     with pytest.raises(MCPError) as caught:
@@ -203,7 +209,9 @@ async def test_study_hexagram_points_at_the_resource(client: Client) -> None:
     assert "iching://hexagram/11" in text
 
 
-@pytest.mark.parametrize("number", ["0", "65", "eleven"])
+@pytest.mark.parametrize(
+    "number", ["0", "65", "eleven", pytest.param("9" * 5000, id="past-int-digit-limit")]
+)
 async def test_study_hexagram_rejects_a_bad_number(client: Client, number: str) -> None:
     with pytest.raises(MCPError) as caught:
         await client.get_prompt("study_hexagram", {"number": number})
