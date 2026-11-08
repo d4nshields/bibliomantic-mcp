@@ -1,0 +1,44 @@
+name: MCP capture
+on:
+  pull_request:
+    types: [opened, reopened, synchronize]
+permissions:
+  contents: read
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event.pull_request.base.sha }}
+          path: base
+          persist-credentials: false
+      - uses: actions/checkout@v6
+        with:
+          repository: ${{ github.event.pull_request.head.repo.full_name }}
+          ref: ${{ github.event.pull_request.head.sha }}
+          path: head
+          persist-credentials: false
+      - uses: astral-sh/setup-uv@v7
+        with:
+          enable-cache: false
+      - name: Capture base and head
+        run: |
+          set -e
+          scripts="$GITHUB_WORKSPACE/head/scripts/compare"
+          for side in base head; do
+            (
+              cd "$side"
+              uv sync --locked
+              env -u PYTHONPATH uv run --locked python "$scripts/capture_mcp.py" \
+                "$RUNNER_TEMP/mcp/$side"
+            )
+          done
+          python3 "$scripts/compare_mcp.py" \
+            "$RUNNER_TEMP/mcp/base/capture.json" "$RUNNER_TEMP/mcp/head/capture.json"
+      - uses: actions/upload-artifact@v6
+        with:
+          name: mcp-captures
+          path: ${{ runner.temp }}/mcp/*/capture.json
+          if-no-files-found: error
