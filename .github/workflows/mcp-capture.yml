@@ -1,6 +1,7 @@
 name: MCP capture
 on:
   pull_request:
+    branches: [main]
     types: [opened, reopened, synchronize]
 permissions:
   contents: read
@@ -26,7 +27,10 @@ jobs:
       - name: Capture base and head
         run: |
           set -e
-          scripts="$GITHUB_WORKSPACE/head/scripts/compare"
+          scripts="$GITHUB_WORKSPACE/base/scripts/compare"
+          if [ ! -f "$scripts/capture_mcp.py" ]; then
+            scripts="$GITHUB_WORKSPACE/head/scripts/compare"
+          fi
           for side in base head; do
             (
               cd "$side"

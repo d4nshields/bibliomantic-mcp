@@ -64,16 +64,13 @@ judge's evidence. One sample per condition makes this an advisory check.
 
 ### GitHub Actions
 
-Add `OPENAI_API_KEY` as a repository Actions **secret** and
-`OPENAI_EVAL_MODEL` as an Actions **variable**. The optional
-`OPENAI_JUDGE_MODEL` is also a variable. If storing the key in a named GitHub
-Environment, set the judge job's `environment` to that name so the job can
-access it.
+Add `OPENAI_API_KEY` as a repository Actions **secret**. The workflows default
+both models to `gpt-4.1`. Set the optional repository Actions variables
+`OPENAI_EVAL_MODEL` and `OPENAI_JUDGE_MODEL` to override them.
 
-The PR workflow captures the exact base and head SHAs and checks their cast
-invariants. The judge workflow runs from the default branch after a successful
-same-repository capture. It reads the capture artifact as JSON and writes its
-report to its own Actions run summary. Fork PRs run the capture check only.
-Both workflows and the judge script must be on the default branch for the
-automatic judge to run. Use the local command to evaluate existing branches
-before that happens.
+The PR workflow captures the exact base and head SHAs when a PR to main is
+opened, reopened, or updated. The judge workflow runs from the default branch
+after a successful same-repository capture. It reads the artifact as JSON,
+writes the full report to its Actions summary, and posts or updates a comment
+on the open PR. Fork PRs run the capture check only. Both workflows and the
+judge script must be on the default branch for automatic judging.
