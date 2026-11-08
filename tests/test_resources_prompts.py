@@ -212,6 +212,22 @@ async def test_consult_decision_includes_situation_and_options(client: Client) -
     assert "for reflection, not prediction" in text
 
 
+async def test_consult_decision_invites_reframing_without_forcing_a_choice(client: Client) -> None:
+    result = await client.get_prompt(
+        "consult_decision",
+        {
+            "situation": "An investigator has evidence implicating her mentor.",
+            "options": "Publish now or investigate the evidence's origin.",
+        },
+    )
+    text = message_text(result)
+    assert "assumptions my list of options may conceal" in text
+    assert "where the text makes a meaningful distinction" in text
+    assert "do not force a matching set of pros and cons for every option" in text
+    assert "Don't choose for me" in text
+    assert "use the reading as a lens on each option" not in text
+
+
 async def test_creative_prompt_preserves_context_and_requests_application(client: Client) -> None:
     result = await client.get_prompt(
         "consult_creative_work",
