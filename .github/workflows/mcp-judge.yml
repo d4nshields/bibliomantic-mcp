@@ -1,0 +1,96 @@
+name: MCP reading judge
+on:
+  workflow_run:
+    workflows: [MCP capture]
+    types: [completed]
+permissions:
+  actions: read
+  contents: read
+  pull-requests: write
+jobs:
+  judge:
+    if: >-
+      github.event.workflow_run.conclusion == 'success' &&
+      github.event.workflow_run.event == 'pull_request' &&
+      github.event.workflow_run.head_repository.full_name == github.repository
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - uses: actions/download-artifact@v7
+        with:
+          name: mcp-captures
+          path: ${{ runner.temp }}/mcp
+          run-id: ${{ github.event.workflow_run.id }}
+          github-token: ${{ github.token }}
+      - name: Judge captured readings
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_EVAL_MODEL: ${{ vars.OPENAI_EVAL_MODEL || 'gpt-4.1' }}
+          OPENAI_JUDGE_MODEL: ${{ vars.OPENAI_JUDGE_MODEL || 'gpt-4.1' }}
+        run: |
+          python3 scripts/compare/judge_mcp.py \
+            "$RUNNER_TEMP/mcp/base/capture.json" "$RUNNER_TEMP/mcp/head/capture.json" \
+            > "$RUNNER_TEMP/judgment.json"
+          {
+            echo '## MCP reading comparison'
+            echo 'Advisory results. Baseline and candidate SHAs are recorded below.'
+            echo '```json'
+            cat "$RUNNER_TEMP/judgment.json"
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+      - name: Publish verdict on the pull request
+        uses: actions/github-script@v8
+        with:
+          script: |
+            const fs = require('node:fs');
+            const run = context.payload.workflow_run;
+            const repo = context.repo;
+            const report = JSON.parse(fs.readFileSync(
+              process.env.RUNNER_TEMP + '/judgment.json', 'utf8'
+            ));
+            if (report.candidate !== run.head_sha) {
+              core.setFailed('The capture SHA does not match the triggering run.');
+              return;
+            }
+
+            const {data: pulls} = await github.rest.pulls.list({
+              ...repo, state: 'open', base: 'main',
+              head: repo.owner + ':' + run.head_branch
+            });
+            const pr = pulls.find(pull => pull.head.sha === run.head_sha &&
+              pull.head.repo?.full_name === run.head_repository.full_name);
+            if (!pr) {
+              core.notice('The pull request is closed or has a newer commit.');
+              return;
+            }
+
+            const marker = '<!-- bibliomantic-reading-judge -->';
+            const escape = value => String(value).replace(/[&<>@]/g,
+              char => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '@': '&#64;'}[char]));
+            const results = Object.entries(report.cases).map(([name, result]) =>
+              '### ' + escape(name) + '\n\n**' + escape(result.verdict) +
+              '**\n\n<pre>' + escape(result.evidence) + '</pre>');
+            const summary = context.serverUrl + '/' + repo.owner + '/' + repo.repo +
+              '/actions/runs/' + context.runId;
+            const body = [
+              marker, '## MCP reading judge', 'Advisory fixed-cast comparison.',
+              'Baseline `' + escape(report.baseline) + '` · Candidate `' +
+                escape(report.candidate) + '`',
+              'Reader `' + escape(report.reading_model) + '` · Judge `' +
+                escape(report.judge_model) + '`',
+              ...results, '[Full readings and report](' + summary + ')'
+            ].join('\n\n');
+
+            const issue = {...repo, issue_number: pr.number};
+            const comments = await github.paginate(github.rest.issues.listComments, issue);
+            const previous = comments.find(comment => comment.user?.login === 'github-actions[bot]' &&
+              comment.body?.startsWith(marker));
+            if (previous) {
+              await github.rest.issues.updateComment({...repo, comment_id: previous.id, body});
+            } else {
+              await github.rest.issues.createComment({...issue, body});
+            }
