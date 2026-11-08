@@ -73,6 +73,10 @@ def test_cast_carries_the_notice() -> None:
     assert oracle.cast(BOOK, rng=random.Random(1)).notice == oracle.NOTICE
 
 
+def test_cast_carries_the_books_source() -> None:
+    assert oracle.cast(BOOK, rng=random.Random(1)).source == BOOK.source
+
+
 def test_default_rng_is_the_system_csprng(monkeypatch: pytest.MonkeyPatch) -> None:
     used: list[str] = []
 

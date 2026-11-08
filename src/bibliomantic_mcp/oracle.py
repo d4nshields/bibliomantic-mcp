@@ -69,6 +69,7 @@ def cast(book: Book, question: str | None = None, rng: random.Random | None = No
         changing_lines=changing,
         transformed=transformed,
         question=question,
+        source=book.source,
         notice=NOTICE,
     )
 
@@ -151,7 +152,8 @@ def describe_method(book: Book) -> MethodDescription:
         changing_lines="A 6 (old yin) or 9 (old yang) is a changing line: it has reached "
         "its extreme and turns into its opposite. Read the line texts for changing lines only.",
         transformed_hexagram="If any lines change, flip each changing line (yin to yang, "
-        "yang to yin) to get a second, transformed hexagram: where the situation is heading. "
+        "yang to yin) to get a related, transformed figure. It offers a further perspective "
+        "on the change, not a guaranteed future. "
         "With no changing lines there is only the primary hexagram.",
         source=book.source,
         licence=book.licence,

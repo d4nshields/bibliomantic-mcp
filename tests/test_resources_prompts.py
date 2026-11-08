@@ -7,6 +7,8 @@ from mcp import Client, MCPError
 from mcp.types import INVALID_PARAMS, PromptReference, ResourceTemplateReference, TextContent
 
 from bibliomantic_mcp.models import Hexagram, Trigram
+from bibliomantic_mcp.prompts import FRAMING, INTERPRETATION_GUIDANCE
+from bibliomantic_mcp.server import INSTRUCTIONS
 
 pytestmark = pytest.mark.anyio
 
@@ -162,10 +164,16 @@ async def test_unknown_argument_gets_no_suggestions(client: Client) -> None:
 
 async def test_prompts_are_listed_with_described_arguments(client: Client) -> None:
     prompts = {p.name: p for p in (await client.list_prompts()).prompts}
-    assert list(prompts) == ["consult", "consult_decision", "study_hexagram"]
+    assert list(prompts) == [
+        "consult",
+        "consult_decision",
+        "consult_creative_work",
+        "study_hexagram",
+    ]
     expected_args = {
         "consult": ["question"],
         "consult_decision": ["situation", "options"],
+        "consult_creative_work": ["work_context", "uncertainty"],
         "study_hexagram": ["number"],
     }
     for name, prompt in prompts.items():
@@ -204,6 +212,56 @@ async def test_consult_decision_includes_situation_and_options(client: Client) -
     assert "for reflection, not prediction" in text
 
 
+async def test_consult_decision_invites_reframing_without_forcing_a_choice(client: Client) -> None:
+    result = await client.get_prompt(
+        "consult_decision",
+        {
+            "situation": "An investigator has evidence implicating her mentor.",
+            "options": "Publish now or investigate the evidence's origin.",
+        },
+    )
+    text = message_text(result)
+    assert "assumptions my list of options may conceal" in text
+    assert "where the text makes a meaningful distinction" in text
+    assert "do not force a matching set of pros and cons for every option" in text
+    assert "Don't choose for me" in text
+    assert "use the reading as a lens on each option" not in text
+
+
+async def test_creative_prompt_preserves_context_and_requests_application(client: Client) -> None:
+    result = await client.get_prompt(
+        "consult_creative_work",
+        {
+            "work_context": "The investigator has never met the missing witness.",
+            "uncertainty": "Should she publish the evidence or investigate its origin?",
+        },
+    )
+    text = message_text(result)
+    assert "The investigator has never met the missing witness." in text
+    assert "Should she publish the evidence or investigate its origin?" in text
+    assert "`cast_hexagram` once" in text
+    assert "Apply that constraint to the work itself" in text
+    assert "Preserve established facts" in text
+
+
+async def test_consultation_guidance_reaches_both_entry_paths(client: Client) -> None:
+    """Prompt selection and direct tool use share the same interpretive method."""
+    assert INTERPRETATION_GUIDANCE in INSTRUCTIONS
+    assert "only when the user requests" in INSTRUCTIONS
+    for name, args in {
+        "consult": {"question": "q"},
+        "consult_decision": {"situation": "s", "options": "o"},
+        "consult_creative_work": {"work_context": "w", "uncertainty": "u"},
+    }.items():
+        text = message_text(await client.get_prompt(name, args))
+        assert text.count(INTERPRETATION_GUIDANCE) == 1
+        assert text.count(FRAMING) == 1
+    tool = next(t for t in (await client.list_tools()).tools if t.name == "cast_hexagram")
+    assert tool.description
+    assert "only when the user requests" in tool.description
+    assert "Reuse this cast" in tool.description
+
+
 async def test_study_hexagram_points_at_the_resource(client: Client) -> None:
     text = message_text(await client.get_prompt("study_hexagram", {"number": "11"}))
     assert "iching://hexagram/11" in text
@@ -224,8 +282,8 @@ async def test_prompts_do_not_carry_the_full_disclaimer(client: Client) -> None:
     for name, args in {
         "consult": {"question": "q"},
         "consult_decision": {"situation": "s", "options": "o"},
+        "consult_creative_work": {"work_context": "w", "uncertainty": "u"},
         "study_hexagram": {"number": "1"},
     }.items():
         text = message_text(await client.get_prompt(name, args))
         assert "not advice" not in text
-        assert len(text) < 600

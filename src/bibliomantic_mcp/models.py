@@ -149,6 +149,7 @@ class Cast(_Frozen):
     changing_lines: tuple[Position, ...] = Field(description="Positions whose value is 6 or 9.")
     transformed: Hexagram | None = Field(description="Primary with changing lines flipped.")
     question: str | None = Field(description="Echoed verbatim. The server never analyses it.")
+    source: str = Field(description="Edition and editing provenance of the returned texts.")
     notice: str
 
     @model_validator(mode="after")

@@ -137,11 +137,11 @@ This is everything the server offers. The list is checked against the running se
 
 Tools are what the AI calls. `cast_hexagram` is the consultation itself: it tosses the coins and returns the full record, with the coins, the line values, the hexagram, any changing lines and the hexagram they change into. The other tools look things up in the book.
 
-Every tool is marked read-only, and every tool returns structured data as well as a short text summary for the model.
+Every tool is marked read-only and returns structured data as well as readable text. A cast's text is a self-contained reading packet: both figures' trigrams, judgments and images, the primary figure's selected changing-line texts, and the source edition. Hosts do not need to expose `structured_content` to the model for those passages to be available.
 
 | Tool | Arguments | Returns |
 |---|---|---|
-| `cast_hexagram` | `question` (optional, up to 2,000 characters, echoed verbatim) | A full `Cast`: six coin tosses, line values, primary hexagram, changing lines, transformed hexagram |
+| `cast_hexagram` | `question` (optional, up to 2,000 characters, echoed verbatim) | A full `Cast`: six coin tosses, line values, primary hexagram, changing lines, transformed hexagram, source edition |
 | `get_hexagram` | `number` (1–64) | One `Hexagram` with its judgment, image and six lines |
 | `get_trigram` | `name` (English, any case, or Chinese character) | One `Trigram` |
 | `describe_method` | none | How the three-coin method works, and the text's source and licence |
@@ -171,10 +171,22 @@ Prompts are ready-made requests you pick from your host's menu. Each one asks th
 | Prompt | Arguments | What it asks the host to do |
 |---|---|---|
 | `consult` | `question` | Cast, then reflect on the reading for the question |
-| `consult_decision` | `situation`, `options` | Cast, then use the reading as a lens on each option |
+| `consult_decision` | `situation`, `options` | Cast, examine the decision's assumptions, and compare options where the text makes a meaningful distinction |
+| `consult_creative_work` | `work_context`, `uncertainty` | Cast once, then apply a passage-grounded constraint to the creative work itself |
 | `study_hexagram` | `number` (completes to 1–64) | Read `iching://hexagram/{number}` and teach it |
 
 These prompts are examples of how an MCP client can bring bibliomantic context into a larger conversation. They should not be interpreted as endorsements of the *I Ching* as a source of professional or real-world advice.
+
+The three consultation prompts share interpretive guidance with the server's instructions.
+The host is asked to attend to specific images and tensions, distinguish source text from
+its own application, and allow uncertainty or disagreement. There is no required output
+template. A direct `cast_hexagram` call does not automatically select an MCP prompt; its
+tool description and the server instructions also guide that entry path.
+
+Follow-up discussion uses the existing cast. Lookup tools can retrieve further passages
+without tossing again. A fresh cast is for a new user-requested consultation, not a way to
+seek an answer that better fits the model's plan. See [Reading evaluation](docs/READING-EVALUATION.md)
+for a small, repeatable comparison of interpretation quality.
 
 ## Content Coverage
 
@@ -332,6 +344,10 @@ Ask your MCP-enabled AI:
 
 > I'm stuck on what should happen next in this story. Consult the I Ching and use the result as an influence on the next scene.
 
+Or choose **`consult_creative_work`** from the prompt menu. Supply the existing work and
+the unresolved choice. The host is asked to make a consequential change to the work and
+briefly identify the passage behind it, while preserving established facts.
+
 ### Breaking a reasoning deadlock
 
 > There are several plausible ways to approach this fictional problem. Consult the I Ching and use the result to choose an unexpected direction to explore.
@@ -342,7 +358,7 @@ Ask your MCP-enabled AI:
 
 ### Weighing options
 
-Pick the **`consult_decision`** prompt from your host's prompt menu, describe the situation, and list the options. The AI casts once and uses the same reading as a lens on each option.
+Pick the **`consult_decision`** prompt from your host's prompt menu, describe the situation, and list the options. The AI casts once and considers what the reading reveals about the decision's framing, comparing options when the text supports a distinction rather than forcing a pros-and-cons template.
 
 ### Basic divination
 
@@ -365,7 +381,7 @@ Three coins are tossed six times, building the hexagram from the bottom line up.
 | 8 | 2 | yin (broken) | no |
 | 9 | 3 | yang (solid) | yes: becomes yin |
 
-The six lines identify one of the 64 hexagrams. Any changing lines are then flipped to give a second, transformed hexagram: the situation the first one is moving towards. The texts for the changing lines are where traditional readings put their weight.
+The six lines identify one of the 64 hexagrams. Any changing lines are then flipped to give a second, related or transformed hexagram. This project treats that figure as a further perspective on the change, not a guaranteed future. The texts for the changing lines receive particular attention. This is an explicit interpretive approach, not a claim that every I Ching tradition follows one rule.
 
 Randomness comes from the operating system's cryptographic random number generator, through Python's `secrets` module.
 

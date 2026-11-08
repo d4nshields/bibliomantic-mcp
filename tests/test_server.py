@@ -84,7 +84,7 @@ async def test_cast_returns_a_valid_structured_record(client: Client) -> None:
     assert cast.notice
 
 
-async def test_cast_content_is_a_concise_reading(client: Client) -> None:
+async def test_cast_content_is_a_self_contained_reading(client: Client) -> None:
     result = await client.call_tool("cast_hexagram", {"question": "What now?"})
     cast = Cast.model_validate(result.structured_content)
     text = text_of(result)
@@ -92,11 +92,15 @@ async def test_cast_content_is_a_concise_reading(client: Client) -> None:
     assert f"Hexagram {cast.primary.number}: {cast.primary.name}" in text
     assert cast.primary.symbol in text
     assert cast.primary.judgment in text
+    assert cast.primary.image in text
+    assert cast.source in text
     if cast.transformed:
         assert f"Becomes {cast.transformed.symbol} Hexagram {cast.transformed.number}" in text
+        assert cast.transformed.judgment in text
+        assert cast.transformed.image in text
     else:
         assert "No changing lines." in text
-    # Concise: not a JSON dump of the whole record.
+    # Readable source material, not a JSON dump of the whole record.
     assert '"tosses"' not in text
 
 

@@ -132,6 +132,10 @@ Open `src/bibliomantic_mcp/prompts.py` → `consult_decision`.
   Arguments are plain strings with descriptions; there is no JSON Schema.
 - The prompt asks the host to call `cast_hexagram` and *then* interpret. It carries one
   framing clause ("for reflection, not prediction"), not a disclaimer banner.
+- Consultation prompts share the server's interpretation guidance: stay with concrete
+  passages, preserve tensions, and reuse the cast. The method guides the host without
+  supplying an interpretation. `consult_creative_work` asks it to apply a consequential
+  constraint to the work itself rather than only explain the hexagram.
 
 **Show:** Inspector → **Prompts** → **List Prompts** → `consult_decision` → fill
 `situation` and `options` → **Get Prompt**: one user message. Then, in **Claude Desktop**:
