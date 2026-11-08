@@ -44,10 +44,15 @@ def register(server: MCPServer[AppState]) -> None:
     ) -> Annotated[CallToolResult, Cast]:
         """Consult the I Ching once with the three-coin method.
 
-        Returns the full record of the cast: the six coin tosses, the line values
+        Call only when the user requests a consultation. Returns the full record of
+        the cast: the six coin tosses, the line values
         (6, 7, 8, 9), the primary hexagram with its complete text, the changing lines,
         and the transformed hexagram if any lines change. Every call casts fresh coins.
-        Interpreting the result for the user's situation is up to you.
+        Reuse this cast for follow-up interpretation; do not recast for a more
+        convenient answer. Look up missing context with get_hexagram or get_trigram.
+        The text result includes judgments, images and selected line texts. Ground
+        your interpretation in those passages and the user's actual context; preserve
+        meaningful tensions rather than forcing agreement or generic reassurance.
         """
         result = oracle.cast(book_from(ctx), question)
         logger.info(
@@ -56,7 +61,8 @@ def register(server: MCPServer[AppState]) -> None:
             result.transformed.number if result.transformed else "none",
             list(result.changing_lines) or "none",
         )
-        # The model reads a concise summary; the application gets the full record.
+        # The text is self-contained even when a host omits structured_content from
+        # model context; the application also gets the full auditable record.
         # The Annotated return type keeps `Cast` as the advertised output_schema,
         # and the SDK validates structured_content against it.
         return CallToolResult(

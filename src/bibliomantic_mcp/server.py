@@ -17,14 +17,17 @@ from bibliomantic_mcp.state import AppState
 
 logger = logging.getLogger(__name__)
 
-INSTRUCTIONS = """\
+INSTRUCTIONS = f"""\
 This server is an I Ching: it casts a hexagram with the traditional three-coin method \
 and returns the canonical text (James Legge's public-domain translation).
-Call `cast_hexagram` to consult; use `get_hexagram`, `get_trigram` and the `iching://` \
+Call `cast_hexagram` only when the user requests a consultation; use `get_hexagram`, \
+`get_trigram` and the `iching://` \
 resources to look things up.
 The server only casts coins and retrieves text. Interpreting the result for the user's \
 situation is your job, as the host.
-Treat every result as a prompt for reflection and creativity, not as a prediction or as advice.\
+Treat every result as a prompt for reflection and creativity, not as a prediction or as advice.
+
+{prompts.INTERPRETATION_GUIDANCE}\
 """
 
 

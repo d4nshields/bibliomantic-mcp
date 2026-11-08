@@ -4,9 +4,10 @@
 
 ## Context
 
-A tool result has two channels: `content`, the text the model reads, and
-`structured_content`, typed data for the host application, described in advance by the
-tool's `output_schema`. Tools can also carry annotations: hints that help a host decide
+A tool result has two channels: `content`, readable text, and `structured_content`, typed
+data described in advance by the tool's `output_schema`. Hosts decide how to expose those
+channels to the model, so reading-critical passages must be present in the text too.
+Tools can also carry annotations: hints that help a host decide
 whether to ask the user before running a tool.
 
 ## Decision
@@ -17,17 +18,24 @@ against it before it is sent.
 
 | Tool | Returns | `content` (for the model) |
 |---|---|---|
-| `cast_hexagram` | `Cast` | a concise reading written by `render.cast_summary` |
+| `cast_hexagram` | `Cast` | a self-contained reading packet written by `render.cast_summary` |
 | `get_hexagram` | `Hexagram` | the SDK's JSON rendering of the model |
 | `get_trigram` | `Trigram` | the SDK's JSON rendering of the model |
 | `describe_method` | `MethodDescription` | the SDK's JSON rendering of the model |
 
 `cast_hexagram` is the one exception to "let the SDK render it". A full `Cast` holds two
 complete hexagrams, so as JSON it is long and repetitive for a model to read. The tool
-returns `Annotated[CallToolResult, Cast]`: it writes `content` itself (symbol, number, name,
-line values, judgment, changing lines and their texts, transformed hexagram, notice). The
+returns `Annotated[CallToolResult, Cast]`: it writes `content` itself (identities, line
+values, both figures' trigrams, judgments and images, selected changing-line texts, source
+and notice). It does not include unselected line texts or all individual coin faces in the
+text packet; those remain in the structured record. The
 annotation keeps `Cast` as the advertised `output_schema`, and the SDK still validates
 `structured_content` against it.
+
+This remains a deliberate tradeoff against the MCP recommendation to also serialize the
+entire structured result into a text block for backward compatibility. The model gets all
+selected reading material without the full audit JSON; clients needing individual coin
+faces must consume `structured_content`. See [ADR-0006](0006-reading-context-and-guidance.md).
 
 **Annotations.** Every tool gets `read_only_hint=True` and `open_world_hint=False`: they
 read a closed local book and change nothing.

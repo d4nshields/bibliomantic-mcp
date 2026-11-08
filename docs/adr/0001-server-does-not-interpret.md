@@ -30,7 +30,9 @@ The server does only the mechanical half.
 
 - Every result is something a person can verify by hand against a printed I Ching. The
   `Cast` model re-checks its own chain (coins → values → hexagram → transformation) when built.
-- Interpretation quality is the host model's, and gets better as models do, with no change here.
+- Interpretation is performed by the host model. Its quality also depends on which source
+  passages reach it and how the task is framed; [ADR-0006](0006-reading-context-and-guidance.md)
+  defines the shared guidance without moving interpretation into the server.
 - The server is small, offline and deterministic except for the coins. With a seeded RNG it is
   fully deterministic, which is how `tests/test_oracle.py` pins casts.
 - Prompts (`prompts.py`) ask the host to interpret; they never contain an interpretation.

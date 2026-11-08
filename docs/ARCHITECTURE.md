@@ -9,7 +9,7 @@ Two layers, one rule: **the domain layer does not know MCP exists.**
 │ state.py      AppState (the loaded Book) and book_from(ctx)                          │
 │ tools.py      cast_hexagram, get_hexagram, get_trigram, describe_method              │
 │ resources.py  iching:// resources, templates, the completion handler                 │
-│ prompts.py    consult, consult_decision, study_hexagram                              │
+│ prompts.py    consult, consult_decision, consult_creative_work, study_hexagram       │
 └──────────────────────────────────────────┬───────────────────────────────────────────┘
                                            │ plain function calls
 ┌──────────────────────────── domain layer (no mcp imports) ───────────────────────────┐
@@ -28,7 +28,7 @@ Two layers, one rule: **the domain layer does not know MCP exists.**
 | `state.py` | The one object the lifespan yields, and the one way a handler reaches it. Separate from `server.py` so primitive modules can import it without a cycle. |
 | `tools.py` | Model-controlled actions. Thin: get the book, call the oracle, map `NotInBook` to `ToolError`. |
 | `resources.py` | Application-controlled data. Maps `NotInBook` to `ResourceNotFoundError`. Holds the server's single completion handler. |
-| `prompts.py` | User-controlled intents. They ask the host to cast and interpret; they never interpret. |
+| `prompts.py` | User-controlled intents and shared interpretation guidance. They ask the host to cast and interpret; they never interpret. |
 | `oracle.py` | The rules of the three-coin method. Takes an injectable RNG, so tests are deterministic. |
 | `book.py` | Loads and checks the data once. Bad data stops the server at startup. |
 | `models.py` | The vocabulary. The same models validate the data and become the tools' `output_schema`. |
@@ -76,11 +76,17 @@ sequenceDiagram
         Oracle->>Book: by_binary[transformed] → Hexagram
     end
     Oracle-->>Tool: Cast (self-validating record)
-    Tool-->>SDK: CallToolResult(content=summary, structured_content=Cast)
+    Tool-->>SDK: CallToolResult(content=reading packet, structured_content=Cast)
     SDK->>SDK: validate structured_content against Cast output_schema
     SDK-->>Host: result: text for the model + structured Cast
     Host->>User: interpretation for the user's situation<br/>(the server never interprets)
 ```
+
+The text packet contains both figures' Judgments, Images and trigram identities, selected
+changing-line texts and source provenance. The structured `Cast` additionally retains all
+line texts and individual coin faces. `source` identifies the edition in both channels.
+Server instructions and consultation prompts share one interpretive method; direct tool
+use does not execute a prompt template. See [ADR-0006](adr/0006-reading-context-and-guidance.md).
 
 ## Errors: one domain error, three protocol shapes
 

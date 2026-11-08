@@ -8,25 +8,32 @@ from bibliomantic_mcp.models import Book, Cast, MethodDescription
 
 
 def cast_summary(cast: Cast) -> str:
-    """A concise reading of a cast: what came up, what changes, the primary judgment."""
+    """A self-contained reading packet, without interpreting the selected texts."""
     p = cast.primary
     lines = [f"{p.symbol} Hexagram {p.number}: {p.name} ({p.chinese}, {p.pinyin})"]
     if cast.question is not None:
         lines.insert(0, f"Question: {cast.question}")
     lines.append(f"Lines, bottom to top: {' '.join(str(int(v)) for v in cast.values)}")
+    lines.append(f"Trigrams: {p.lower} below, {p.upper} above.")
     lines.append(f"Judgment: {p.judgment}")
+    lines.append(f"Image: {p.image}")
     if cast.transformed is None:
         lines.append("No changing lines.")
     else:
         positions = ", ".join(str(n) for n in cast.changing_lines)
         lines.append(f"Changing lines: {positions}")
         for n in cast.changing_lines:
-            lines.append(f"  {p.lines[n - 1].text}")
+            lines.append(f"  Line {n}: {p.lines[n - 1].text}")
         # Hexagrams 1 and 2 have an extra text for when every line changes.
         if len(cast.changing_lines) == 6 and p.commentary:
             lines.append(f"  {p.commentary}")
         t = cast.transformed
         lines.append(f"Becomes {t.symbol} Hexagram {t.number}: {t.name} ({t.chinese}, {t.pinyin})")
+        lines.append("Related figure, not a guaranteed future.")
+        lines.append(f"Trigrams: {t.lower} below, {t.upper} above.")
+        lines.append(f"Judgment: {t.judgment}")
+        lines.append(f"Image: {t.image}")
+    lines.append(f"Source: {cast.source}")
     lines.append(cast.notice)
     return "\n".join(lines)
 
